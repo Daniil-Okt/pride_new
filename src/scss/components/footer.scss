@@ -1,0 +1,18 @@
+.footer {
+  @include adaptiveClamp(padding-top, 94, 30);
+  @include adaptiveClamp(padding-bottom, 83, 36);
+  background: #f3f3f3;
+
+
+  &__row {
+    @media(min-width:1200px){
+        max-width: 75%;
+    }
+  }
+
+  &__info {
+    p {
+      line-height: 150%;
+    }
+  }
+}

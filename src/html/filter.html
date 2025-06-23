@@ -1,0 +1,282 @@
+<div class="filter">
+    <div class="filter__content d-flex flex-column p-3 p-xl-4">
+        <div class="filter__head p-3 d-lg-none">
+            <div class="filter__t-big fw-medium">
+                Фильтр
+            </div>
+            <button type="button" class="filter__btn-close btn-close" aria-label="Закрыть"></button>
+        </div>
+        <div class="filter__box d-flex flex-column">
+            <div class="filter__item">
+                <h3 class="filter__t-min fw-medium">
+                    Категория
+                </h3>
+            </div>
+            <div class="filter__item">
+                <a href="#" class="filter__cat-link">
+                    <p class="filter__t-min">Мебель и хранение инструмента</p>
+                </a>
+            </div>
+            <div class="filter__item">
+                <a href="#" class="filter__cat-link _active">
+                    <p class="filter__t-min">Тележки инструментальные</p>
+                </a>
+            </div>
+        </div>
+        <div class="filter__box d-flex flex-column">
+            <h3 class="filter__t-big fw-medium pb-3 ">
+                Цена
+            </h3>
+            <div class="range">
+                <div class="range__row-input">
+                    <div class="range__item-input focus">
+                        <p>от</p>
+                        <input type="text" value="0" class="autoresize range__min-input" data-field-type="price">
+                        <p>p</p>
+                    </div>
+                    
+                    <div class="range__item-input focus">
+                        <p>до</p>
+                        <input type="text" value="100000" class="autoresize range__max-input" data-field-type="price">
+                        <p>p</p>
+                    </div>
+                </div>
+                <div class="range__slider">
+                <div class="slider-range"></div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="filter__box d-flex flex-column pb-1 pt-1 pb-xl-3 pt-xl-3">
+            <div class="filter__item">
+                <h3 class="filter__t-min">
+                    Производители
+                </h3>
+            </div>
+            <div class="filter__item">
+                <label class="form-check filter__t-min">
+                    <input class="form-check-input" name="manufacturer" type="checkbox" value="Jonnesway">
+                    <div class="form-check-icon"></div>
+                    <span class="form-check-text">
+                        <span>Jonnesway</span>
+                    </span>
+                </label>
+            </div>
+            <div class="filter__item">
+                <label class="form-check filter__t-min">
+                    <input class="form-check-input" name="manufacturer" type="checkbox" value="Carbon">
+                    <div class="form-check-icon"></div>
+                    <span class="form-check-text">
+                        <span>Carbon</span>
+                    </span>
+                </label>
+            </div>
+            <div class="filter__item">
+                <label class="form-check filter__t-min">
+                    <input class="form-check-input" name="manufacturer" type="checkbox" value="Thorvik">
+                    <div class="form-check-icon"></div>
+                    <span class="form-check-text">
+                        <span>Thorvik</span>
+                    </span>
+                </label>
+            </div>
+            <div class="filter__item">
+                <label class="form-check filter__t-min">
+                    <input class="form-check-input" name="manufacturer" type="checkbox" value="Ombra">
+                    <div class="form-check-icon"></div>
+                    <span class="form-check-text">
+                        <span>Ombra</span>
+                    </span>
+                </label>
+            </div>
+        </div>
+        <div class="filter__box d-flex flex-column pb-1 pt-1 pb-xl-3 pt-xl-3">
+            <div class="filter__item">
+                <label class="form-check filter__t-min">
+                    <input class="form-check-input" name="rating" type="checkbox" value="Высокий рейтинг">
+                    <div class="form-check-icon"></div>
+                    <span class="form-check-text">
+                        <span class="fw-medium">Высокий рейтинг</span>
+                        <span class="min">4 и 5 звезд</span>
+                    </span>
+                </label>
+            </div>
+        </div>
+        <div class="filter__box d-flex flex-column pb-1 pt-1 pb-xl-3 pt-xl-3">
+            <div class="filter__item">
+                <label class="form-check filter__t-min">
+                    <input class="form-check-input" name="reviews" type="checkbox" value="Только с отзывами">
+                    <div class="form-check-icon"></div>
+                    <span class="form-check-text">
+                        <span>Только с отзывами</span>
+                    </span>
+                </label>
+            </div>
+        </div>
+        <div class="filter__box d-flex flex-column">
+            <h3 class="filter__t-big fw-medium pb-3">
+                Мощность
+            </h3>
+            <div class="range">
+                <div class="range__row-input">
+                    <div class="range__item-input focus">
+                        <p>от</p>
+                        <input type="text" value="150" class="autoresize range__min-input" data-field-type="power">
+                    </div>
+                    
+                    <div class="range__item-input focus">
+                        <p>до</p>
+                        <input type="text" value="10000" class="autoresize range__max-input" data-field-type="power">
+                    </div>
+                </div>
+                <div class="range__slider">
+                <div class="slider-range"></div>
+                </div>
+            </div>
+        </div>
+        <div class="filter__box d-flex flex-column pb-1 pt-1 pb-xl-3 pt-xl-3">
+            <div class="filter__item">
+                <h3 class="filter__t-min">
+                    Тип питания
+                </h3>
+            </div>
+            <div class="filter__item">
+                <label class="form-check filter__t-min">
+                    <input class="form-check-input" name="nutrition" type="checkbox" value="Аккумуляторный">
+                    <div class="form-check-icon"></div>
+                    <span class="form-check-text">
+                        <span>Аккумуляторный</span>
+                    </span>
+                </label>
+            </div>
+            <div class="filter__item">
+                <label class="form-check filter__t-min">
+                    <input class="form-check-input" name="nutrition" type="checkbox" value="Сетевой">
+                    <div class="form-check-icon"></div>
+                    <span class="form-check-text">
+                        <span>Сетевой</span>
+                    </span>
+                </label>
+            </div>
+            <div class="filter__item">
+                <label class="form-check filter__t-min">
+                    <input class="form-check-input" name="nutrition" type="checkbox" value="От батареек">
+                    <div class="form-check-icon"></div>
+                    <span class="form-check-text">
+                        <span>От батареек</span>
+                    </span>
+                </label>
+            </div>
+        </div>
+        <div class="filter__box d-flex flex-column pb-1 pt-1 pb-xl-3 pt-xl-3">
+            <div class="filter__item">
+                <h3 class="filter__t-min">
+                    Упаковка
+                </h3>
+            </div>
+            <div class="filter__item">
+                <label class="form-check filter__t-min">
+                    <input class="form-check-input" name="packaging" type="checkbox" value="Коробка">
+                    <div class="form-check-icon"></div>
+                    <span class="form-check-text">
+                        <span>Коробка</span>
+                    </span>
+                </label>
+            </div>
+            <div class="filter__item">
+                <label class="form-check filter__t-min">
+                    <input class="form-check-input" name="packaging" type="checkbox" value="Сумка">
+                    <div class="form-check-icon"></div>
+                    <span class="form-check-text">
+                        <span>Сумка</span>
+                    </span>
+                </label>
+            </div>
+            <div class="filter__item">
+                <label class="form-check filter__t-min">
+                    <input class="form-check-input" name="packaging" type="checkbox" value="Чемодан/кейс">
+                    <div class="form-check-icon"></div>
+                    <span class="form-check-text">
+                        <span>Чемодан/кейс</span>
+                    </span>
+                </label>
+            </div>
+            <div class="filter__item">
+                <label class="form-check filter__t-min">
+                    <input class="form-check-input" name="packaging" type="checkbox" value="Ящик">
+                    <div class="form-check-icon"></div>
+                    <span class="form-check-text">
+                        <span>Ящик</span>
+                    </span>
+                </label>
+            </div>
+        </div>
+        <div class="filter__box d-flex flex-column">
+            <h3 class="filter__t-big fw-medium pb-3">
+                Min внутренний диаметр цанги, мм
+            </h3>
+            <div class="range">
+                <div class="range__row-input">
+                    <div class="range__item-input focus">
+                        <p>от</p>
+                        <input type="text" value="10" class="autoresize range__min-input" data-field-type="diameter">
+                    </div>
+                    
+                    <div class="range__item-input focus">
+                        <p>до</p>
+                        <input type="text" value="1000" class="autoresize range__max-input" data-field-type="diameter">
+                    </div>
+                </div>
+                <div class="range__slider">
+                <div class="slider-range"></div>
+                </div>
+            </div>
+        </div>
+        <div class="filter__box d-flex flex-column">
+            <h3 class="filter__t-big fw-medium pb-3">
+                Max внутренний диаметр цанги, мм
+            </h3>
+            <div class="range">
+                <div class="range__row-input">
+                    <div class="range__item-input focus">
+                        <p>от</p>
+                        <input type="text" value="1" class="autoresize range__min-input" data-field-type="diameter">
+                    </div>
+                    
+                    <div class="range__item-input focus">
+                        <p>до</p>
+                        <input type="text" value="1000" class="autoresize range__max-input" data-field-type="diameter">
+                    </div>
+                </div>
+                <div class="range__slider">
+                <div class="slider-range"></div>
+                </div>
+            </div>
+        </div>
+        <div class="filter__box d-flex flex-column">
+            <h3 class="filter__t-big fw-medium pb-3">
+                Вес нетто, кг
+            </h3>
+            <div class="range">
+                <div class="range__row-input">
+                    <div class="range__item-input focus">
+                        <p>от</p>
+                        <input type="text" value="0" class="autoresize range__min-input" data-field-type="weight">
+                    </div>
+                    
+                    <div class="range__item-input focus">
+                        <p>до</p>
+                        <input type="text" value="100" class="autoresize range__max-input" data-field-type="weight">
+                    </div>
+                </div>
+                <div class="range__slider">
+                <div class="slider-range"></div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="filter__btn-row sticky-bottom p-3 p-xl-4">
+            <button type="submit" class="btn btn-primary big w-100">Показать 24 товара</button>
+        </div>
+    </div>
+</div>
