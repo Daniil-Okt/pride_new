@@ -19,12 +19,14 @@ import { filterInit } from './modules/filterInit';
 import { sliderInit } from './modules/slider';
 import { dropdownInit } from './modules/dropdown';
 import { searchOpenClose } from './modules/searchOpenClose';
+import { catalogGridSwitch } from './modules/catalogGridSwitch';
+import { menuClose } from './modules/menu-close';
 
 
 // import Tabs from './modules/tabs';
 // import Accordion from './modules/accordion';
 
-BaseHelpers.checkWebpSupport();
+// BaseHelpers.checkWebpSupport();
 /* Добавление класса touch для HTML если браузер мобильный */
 // BaseHelpers.addTouchClass();
 /* Добавление loaded для HTML после полной загрузки страницы */
@@ -47,7 +49,7 @@ BaseHelpers.addLoadedClass();
 /** ===================================================================================
  *  Модуль для работы с меню (Бургер)
  * */
-// new BurgerMenu().init();
+new BurgerMenu().init();
 
 /** ===================================================================================
  *  Библиотека для анимаций
@@ -184,9 +186,9 @@ BaseHelpers.addLoadedClass();
 	* Вызвать функцию и передать в нее массив нужных элементов
 	* При клике на элемент, у всех элементов класс удаляется
 */
-// import { toggleActiveClassParent } from './modules/index.js'
-// const elementAll = document.querySelectorAll('.class');
-// toggleActiveClassParent(elementAll)
+import { toggleActiveClassParent } from './modules/index.js'
+const linkDropHead = document.querySelectorAll('.link-drop__head');
+toggleActiveClassParent(linkDropHead)
 
 /* Динамический класса _active элементу при клике ========================================================
 	* Вызвать функцию и передать в нее массив нужных элементов
@@ -204,6 +206,7 @@ document.querySelectorAll('.prod-card__h-i-like').forEach(like => {
 })
 
 
+
 sliderInit()
 
 dropdownInit()
@@ -213,3 +216,7 @@ sliderRange()
 filterInit()
 
 searchOpenClose()
+
+catalogGridSwitch()
+
+menuClose()

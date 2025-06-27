@@ -67,6 +67,20 @@ p {
             padding: rem(14.3) rem(20) rem(13.3);
         }
     }
+
+    &.gray {
+        background: #f3f3f3;
+        font-size: rem(14);
+        padding: rem(15);
+        border-radius: 6px;
+        color: #292929;
+        color: $body-color;
+        
+        &:hover {
+            color: #292929 !important;
+            background: #dfdfdf;
+        }
+    }
 }
 
 .btn-close {
@@ -296,3 +310,8 @@ p {
 
 
 
+
+
+.gap-20 {
+    gap: rem(20);
+}

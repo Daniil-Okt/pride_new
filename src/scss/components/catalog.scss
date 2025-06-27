@@ -11,28 +11,32 @@
     }
 
     &__btn-grid {
-        width: rem(25.92);
-        height: rem(25.92);
-        background-color: $gray-600;
+        width: rem(28);
+        height: rem(28);
         cursor: pointer;
-        transition: background-color 0.3s ease  0s;
-        -webkit-mask-size: contain;
-        mask-size: contain;
+        svg {
+            path {
+                transition: all 0.3s ease  0s;
+                fill: #A6A6A6;
+            }
+        }
 
-        &.sq {
-            -webkit-mask-image: url('@img/catalog-grid-sq.svg');
-            mask-image: url('@img/catalog-grid-sq.svg');
-        }
-        &.ln {
-            -webkit-mask-image: url('@img/catalog-grid-ln.svg');
-            mask-image: url('@img/catalog-grid-ln.svg');
-        }
+
 
         &:hover {
-            background-color: var(--bs-font-color);
+            svg {
+                path {
+                    fill: var(--bs-font-color);
+                }
+            }
         }
         &._active {
-            background-color: var(--bs-orange)
+            pointer-events: none;
+            svg {
+                path {
+                    fill: var(--bs-orange);
+                }
+            }
         }
     }
     &__ftr-open {
@@ -78,8 +82,17 @@
     &__item {
    
     }
+    &__item-fon {
+        top: 0;
+        right: 0;
+
+        @media(max-width:480px){
+            right: -15%;
+        }
+    }
 
     &__item-body {
+        position: relative;
         @include adaptiveClamp(padding, 18, 14);
         border-radius: var(--bs-radius);
         border: rem(1) solid #e5e5e5;
@@ -88,8 +101,14 @@
         align-items: end;
         box-shadow: var(--bs-shadow);
         transition: background-color 0.3s ease  0s;
+        overflow: hidden;
+        padding-right: 30% !important;
+
         h2 {
+            position: relative;
+            z-index: 1;
             @include adaptiveClamp(font-size, 19, 14);
+            
         }
 
         &:hover {
@@ -100,7 +119,31 @@
 
 
 .prod-card {
-   
+    .catalog-row-rect & {
+        @media(min-width:576px){
+            width: 100% !important;
+
+            .prod-card__content {
+                flex-direction: row !important;
+            }
+            .prod-card__body {
+                padding: rem(15) !important;
+                // display: grid !important;
+                // grid-template-columns: 1fr 1fr;
+            }
+            h3.prod-card__text {
+                font-size: rem(18) !important;
+                max-width: rem(400);
+            }
+            .prod-card__top {
+                width: rem(200);
+            }
+
+            .prod-card__star-row, h3.prod-card__text  {
+                grid-column: 2 span;
+            }
+        }
+    }
 
     &__content {
         background: var(--white-color);
@@ -207,6 +250,7 @@
             padding-left: rem(15.26);
             padding-right: rem(15.26);
         }
+
     }
 
     &__star-box {
@@ -220,7 +264,7 @@
         width: rem(11);
         height: rem(11);
         background-color: #dadcde;
-        cursor: pointer;
+        // cursor: pointer;
         // color: rgb(137,138,140);
         -webkit-mask-image: url('@img/icon-star.svg');
         mask-image: url('@img/icon-star.svg');
@@ -281,6 +325,7 @@
         color: var(--black-color);
     }
 }
+
 .pagination {
     @include adaptiveClamp(padding-bottom, 80, 50);
 

@@ -32,10 +32,15 @@
     @media(max-width:460px){
         width: 100%;
         min-width: 0;
+        overflow: hidden;
+        &::before {
+            display: none;
+        }
     }
     &__content {
         gap: rem(8);
         overflow-y: auto;
+        overflow-x: hidden;
         max-height: 100vh;
     }
     &__box {
