@@ -8,9 +8,9 @@
   <title>Главная</title>
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/main.min.css?_v=20250623130218">
+  <link rel="stylesheet" href="css/main.min.css?_v=20250627230955">
 
-  <script defer="defer" src="js/main.min.js?_v=20250623130218"></script>
+  <script defer="defer" src="js/main.min.js?_v=20250627230955"></script>
 </head>
 
   <body>
@@ -83,10 +83,10 @@
               </svg>
             </button>
           </form>
-          <div href="#" class="d-flex ms-auto d-md-none header__btn-big header__search-open">
+          <div href="#" class="d-flex ms-auto d-md-none header__btn-big header__search-open search-open">
             <img src="images/icon-h-serch.svg" alt="">
           </div>
-          <a href="#" class="header__btn-big">
+          <a href="#" class="header__btn-big d-lg-flex d-none">
             <img src="images/icon-h-sr.svg" alt="">
           </a>
           <a href="#" class="header__btn-big">
@@ -98,11 +98,105 @@
           <a href="#" class="header__btn-big">
             <img src="images/icon-h-p.svg" alt="">
           </a>
+          <div href="#" class="header__btn-big header__burger icon-menu">
+            <img src="images/icon-menu-open.svg" alt="">
+          </div>
         </div>
       </div>
     </div>
 
     
+  </div>
+
+  <div class="header__mob-menu mob-menu">
+    <div class="d-flex flex-column mob-menu__body">
+      <div class="d-flex align-items-center justify-content-between mob-menu__head">
+        <div class="icon-menu mob-menu__close">
+          <svg width="54" height="44" viewBox="0 0 54 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M32 27L22 17M32 17L22 27" stroke="#292929" stroke-width="0.625" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="mob-menu__logo">
+          <img src="images/logo.svg" alt="">
+        </div>
+        <div class="mob-menu__search-btn search-open">
+          <svg width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.4998 24.1317C23.6592 24.1317 25.4098 22.3554 25.4098 20.1642C25.4098 17.9731 23.6592 16.1968 21.4998 16.1968C19.3404 16.1968 17.5898 17.9731 17.5898 20.1642C17.5898 22.3554 19.3404 24.1317 21.4998 24.1317Z" stroke="#292929" stroke-width="1.10399"/>
+            <path d="M20.4556 27.8032L22.5445 24.1319" stroke="#292929" stroke-width="1.10399"/>
+          </svg>
+        </div>
+      </div>
+      <div class="d-flex align-items-center justify-content-between mb-3 mob-menu__ctr">
+        <div class="dropdown header__city">
+          <button class="d-flex align-items-center dropdown-toggle bs-link gap-1" type="button" id="mobMenuCity" data-bs-toggle="dropdown" aria-expanded="false">
+            <span>Москва</span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="mobMenuCity">
+              <li><a class="active dropdown-item" href="#" data-value="Action">Москва</a></li>
+              <li><a class="dropdown-item" href="#" data-value="Another action">Питер</a></li>
+              <li><a class="dropdown-item" href="#" data-value="Something else">Город-65</a></li>
+          </ul>
+        </div>
+        <a href="#" class="d-flex align-items-center justify-content-center mob-menu__phone">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.2018 13.9737C15.1018 13.8737 14.5018 15.3737 13.7018 15.7737C12.4018 16.4737 10.0018 13.9737 10.0018 13.9737C10.0018 13.9737 7.50184 11.5737 8.10184 10.2737C8.60184 9.47372 10.1018 8.87372 10.0018 7.77372C9.90184 6.77372 7.70184 3.17372 6.60184 4.17372C4.20184 6.37372 4.00184 7.27372 4.00184 9.07372C3.90184 12.1737 7.90184 16.0737 7.90184 16.0737C8.30184 16.4737 11.8018 20.0737 14.9018 19.9737C16.7018 19.9737 17.6018 19.7737 19.8018 17.3737C20.8018 16.2737 17.3018 14.0737 16.2018 13.9737Z" fill="#FC5521"/>
+          </svg>
+        </a>
+      </div>
+      <ul class="d-flex flex-column mob-menu__list gap-20 p-0">
+        <li><a href="#" class="mob-menu__link">Каталог</a></li>
+        <li><a href="#" class="mob-menu__link">Акции</a></li>
+        <li>
+          <div class="d-flex flex-column link-drop mob-menu__link mob-menu__link-drop">
+            <div class="d-flex align-items-center justify-content-between gap-3 link-drop__head">
+              <span>Информация</span>
+              <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.0193 -4.81668e-07L12 0.892352L6.65505 5.75277C6.56941 5.83112 6.46756 5.8933 6.35538 5.93573C6.2432 5.97816 6.12289 6 6.00139 6C5.87988 6 5.75958 5.97816 5.6474 5.93573C5.53521 5.8933 5.43337 5.83112 5.34773 5.75277L-2.23262e-07 0.892353L0.980725 0.000840621L6 4.56269L11.0193 -4.81668e-07Z" fill="#A0A0A0"/>
+              </svg>
+            </div>
+            <ul class="d-flex flex-column gap-3 mob-menu__list">
+              <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+              <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+              <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="d-flex flex-column link-drop mob-menu__link mob-menu__link-drop">
+            <div class="d-flex align-items-center justify-content-between gap-3 link-drop__head">
+              <span>Покупателям</span>
+              <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.0193 -4.81668e-07L12 0.892352L6.65505 5.75277C6.56941 5.83112 6.46756 5.8933 6.35538 5.93573C6.2432 5.97816 6.12289 6 6.00139 6C5.87988 6 5.75958 5.97816 5.6474 5.93573C5.53521 5.8933 5.43337 5.83112 5.34773 5.75277L-2.23262e-07 0.892353L0.980725 0.000840621L6 4.56269L11.0193 -4.81668e-07Z" fill="#A0A0A0"/>
+              </svg>
+            </div>
+            <ul class="d-flex flex-column gap-3 mob-menu__list">
+              <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+              <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+              <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="d-flex flex-column link-drop mob-menu__link mob-menu__link-drop">
+            <div class="d-flex align-items-center justify-content-between gap-3 link-drop__head">
+              <span>Сервисы</span>
+              <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.0193 -4.81668e-07L12 0.892352L6.65505 5.75277C6.56941 5.83112 6.46756 5.8933 6.35538 5.93573C6.2432 5.97816 6.12289 6 6.00139 6C5.87988 6 5.75958 5.97816 5.6474 5.93573C5.53521 5.8933 5.43337 5.83112 5.34773 5.75277L-2.23262e-07 0.892353L0.980725 0.000840621L6 4.56269L11.0193 -4.81668e-07Z" fill="#A0A0A0"/>
+              </svg>
+            </div>
+            <ul class="d-flex flex-column gap-3 mob-menu__list">
+              <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+              <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+              <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div class="btn w-100 gray mob-menu__btn mt-auto">
+        Задать вопрос
+      </div>
+    </div>
+
   </div>
 </header>
 
@@ -133,6 +227,9 @@
             <div class="gx-3 gx-md-6 gy-7 row">
                 <div class="col-md-4 col-xxl-3 category__item col-6">
                     <a href="#" class="category__item-body">
+                        <div class="h-100 category__item-fon position-absolute">
+                            <picture><source srcset="images/cat-item.webp" type="image/webp"><img class="h-100 w-auto" src="images/cat-item.png" alt=""></picture>
+                        </div>
                         <h2 class="m-0 bs-t-big mt-3">
                             Тележки инструментальные
                         </h2>
@@ -140,6 +237,9 @@
                 </div>
                 <div class="col-md-4 col-xxl-3 category__item col-6">
                     <a href="#" class="category__item-body">
+                        <div class="h-100 category__item-fon position-absolute">
+                            <picture><source srcset="images/cat-item.webp" type="image/webp"><img class="h-100 w-auto" src="images/cat-item.png" alt=""></picture>
+                        </div>
                         <h2 class="m-0 bs-t-big mt-3">
                             Верстаки
                         </h2>
@@ -147,6 +247,9 @@
                 </div>
                 <div class="col-md-4 col-xxl-3 category__item col-6">
                     <a href="#" class="category__item-body">
+                        <div class="h-100 category__item-fon position-absolute">
+                            <picture><source srcset="images/cat-item.webp" type="image/webp"><img class="h-100 w-auto" src="images/cat-item.png" alt=""></picture>
+                        </div>
                         <h2 class="m-0 bs-t-big mt-3">
                             Ящики для инструмента
                         </h2>
@@ -154,6 +257,9 @@
                 </div>
                 <div class="col-md-4 col-xxl-3 category__item col-6">
                     <a href="#" class="category__item-body">
+                        <div class="h-100 category__item-fon position-absolute">
+                            <picture><source srcset="images/cat-item.webp" type="image/webp"><img class="h-100 w-auto" src="images/cat-item.png" alt=""></picture>
+                        </div>
                         <h2 class="m-0 bs-t-big mt-3">
                             Аксессуары и комплектующие
                         </h2>
@@ -161,6 +267,9 @@
                 </div>
                 <div class="col-md-4 col-xxl-3 category__item col-6">
                     <a href="#" class="category__item-body">
+                        <div class="h-100 category__item-fon position-absolute">
+                            <picture><source srcset="images/cat-item.webp" type="image/webp"><img class="h-100 w-auto" src="images/cat-item.png" alt=""></picture>
+                        </div>
                         <h2 class="m-0 bs-t-big mt-3">
                             Тележки инструментальные
                         </h2>
@@ -168,6 +277,9 @@
                 </div>
                 <div class="col-md-4 col-xxl-3 category__item col-6">
                     <a href="#" class="category__item-body">
+                        <div class="h-100 category__item-fon position-absolute">
+                            <picture><source srcset="images/cat-item.webp" type="image/webp"><img class="h-100 w-auto" src="images/cat-item.png" alt=""></picture>
+                        </div>
                         <h2 class="m-0 bs-t-big mt-3">
                             Верстаки
                         </h2>
@@ -175,6 +287,9 @@
                 </div>
                 <div class="col-md-4 col-xxl-3 category__item col-6">
                     <a href="#" class="category__item-body">
+                        <div class="h-100 category__item-fon position-absolute">
+                            <picture><source srcset="images/cat-item.webp" type="image/webp"><img class="h-100 w-auto" src="images/cat-item.png" alt=""></picture>
+                        </div>
                         <h2 class="m-0 bs-t-big mt-3">
                             Ящики для инструмента
                         </h2>
@@ -471,13 +586,13 @@
 </div>
             </div>
             <div class="col-12 col-lg-8">
-                <div class="d-flex mb-3 pt-3 w-100">
+                <div class="d-flex pt-3 mb-3 w-100">
                     <div class="d-flex align-items-center gap-2 catalog__ftr-open d-lg-none me-4">
                         <img src="images/icon-ftr-open.svg" alt="">
                         <span>Все фильтры</span>
                     </div>
                     <div class="d-lg-none catalog__sort dropdown">
-                        <button class="d-flex align-items-center gap-2 catalog__btn-sort dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="d-flex align-items-center dropdown-toggle catalog__btn-sort gap-2" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                             <img src="images/icon-sort.svg" alt="">
                             <span>По популярности</span>
                         </button>
@@ -487,10 +602,27 @@
                             <li><a class="dropdown-item" href="#" data-value="Something else">По новизне</a></li>
                         </ul>
                     </div>
-                                
                     <div class="d-flex gap-2 ms-auto">
-                        <div class="_active catalog__btn-grid sq"></div>
-                        <div class="catalog__btn-grid ln"></div>
+                        <div class="_active catalog__btn-grid">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.66699 4.6665H12.8337V12.8332H4.66699V4.6665Z" fill="#FC5521"/>
+                                <path d="M15.167 4.6665H23.3337V12.8332H15.167V4.6665Z" fill="#FC5521"/>
+                                <path d="M4.66699 15.1665H12.8337V23.3332H4.66699V15.1665Z" fill="#FC5521"/>
+                                <path d="M15.167 15.1665H23.3337V23.3332H15.167V15.1665Z" fill="#FC5521"/>
+                            </svg>
+                        </div>
+                        <div class="catalog__btn-grid ln">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.66699 5.8335H8.16699V8.16683H4.66699V5.8335Z" fill="#A6A6A6"/>
+                                <path d="M4.66699 10.5H8.16699V12.8333H4.66699V10.5Z" fill="#A6A6A6"/>
+                                <path d="M4.66699 15.1665H8.16699V17.4998H4.66699V15.1665Z" fill="#A6A6A6"/>
+                                <path d="M4.66699 19.8335H8.16699V22.1668H4.66699V19.8335Z" fill="#A6A6A6"/>
+                                <path d="M9.33301 5.8335H23.333V8.16683H9.33301V5.8335Z" fill="#A6A6A6"/>
+                                <path d="M9.33301 10.5H23.333V12.8333H9.33301V10.5Z" fill="#A6A6A6"/>
+                                <path d="M9.33301 15.1665H23.333V17.4998H9.33301V15.1665Z" fill="#A6A6A6"/>
+                                <path d="M9.33301 19.8335H23.333V22.1668H9.33301V19.8335Z" fill="#A6A6A6"/>
+                              </svg>
+                        </div>
                     </div>
                 </div>
                 <div class="gx-3 gx-md-6 gy-7 row">
@@ -515,19 +647,19 @@
                                         </div>
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                         </div>
                                     </div>
@@ -579,19 +711,19 @@
                                         </div>
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                         </div>
                                     </div>
@@ -643,19 +775,19 @@
                                         </div>
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                         </div>
                                     </div>
@@ -707,19 +839,19 @@
                                         </div>
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                         </div>
                                     </div>
@@ -771,19 +903,19 @@
                                         </div>
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                         </div>
                                     </div>
@@ -835,19 +967,19 @@
                                         </div>
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                         </div>
                                     </div>
@@ -899,19 +1031,19 @@
                                         </div>
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                         </div>
                                     </div>
@@ -963,19 +1095,19 @@
                                         </div>
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                         </div>
                                     </div>
@@ -1027,19 +1159,19 @@
                                         </div>
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                         </div>
                                     </div>
@@ -1091,19 +1223,19 @@
                                         </div>
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                         </div>
                                     </div>
@@ -1155,19 +1287,19 @@
                                         </div>
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                         </div>
                                     </div>
@@ -1219,19 +1351,19 @@
                                         </div>
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                         </div>
                                     </div>
@@ -1283,19 +1415,19 @@
                                         </div>
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                         </div>
                                     </div>
@@ -1347,19 +1479,19 @@
                                         </div>
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                         </div>
                                     </div>
@@ -1411,19 +1543,19 @@
                                         </div>
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                         </div>
                                     </div>
@@ -1475,19 +1607,19 @@
                                         </div>
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                             <div class="carousel-item">
-                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="h-100 w-auto d-block m-auto" alt="..."></picture>
                                             </div>
                                         </div>
                                     </div>
