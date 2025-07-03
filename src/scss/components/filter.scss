@@ -3,13 +3,13 @@
     top: 0;
     background-color: var(--body-second);
     max-height: 100vh;
-  
+
 
     @media(max-width:991px){
         position: fixed;
         top: 0;
         z-index: 100;
-        left: -100%;
+        left: -120%;
         
         min-width: rem(460);
         transition: left 0.5s ease  0s;
@@ -29,10 +29,12 @@
             left: 0 !important;
         }
     }
-    @media(max-width:460px){
+    @media(max-width:550px){
         width: 100%;
         min-width: 0;
         overflow: hidden;
+
+        left: -100vw;
         &::before {
             display: none;
         }
@@ -60,7 +62,7 @@
             height: rem(41);
         }
     }
-    h3 {
+    div {
         font-weight: 500;
         line-height: 125%;
     

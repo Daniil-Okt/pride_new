@@ -315,3 +315,18 @@ p {
 .gap-20 {
     gap: rem(20);
 }
+
+.dropdown-menu.show {
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 4px;
+
+    .dropdown-item {
+        transition: all 0.3s ease  0s;
+        padding-top: rem(6.5);
+    }
+
+
+}
