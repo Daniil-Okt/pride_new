@@ -8,9 +8,9 @@
   <title>Товар</title>
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/main.min.css?_v=20250710121526">
+  <link rel="stylesheet" href="css/main.min.css?_v=20250710121624">
 
-  <script defer="defer" src="js/main.min.js?_v=20250710121526"></script>
+  <script defer="defer" src="js/main.min.js?_v=20250710121624"></script>
 </head>
 
     <body>
@@ -387,13 +387,13 @@
         <div class="product__bottom">
             <ul class="nav-tabs product__nav-tabs" id="prodTab" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <a class="" id="descript-tab" data-bs-toggle="tab" href="#descript" role="tab" aria-controls="home" aria-selected="true">Описание</a>
+                    <a class="active" id="descript-tab" data-bs-toggle="tab" href="#descript" role="tab" aria-controls="home" aria-selected="true">Описание</a>
                 </li>
                 <li class="nav-item" role="presentation">
                     <a class="" id="specif-tab" data-bs-toggle="tab" href="#specif" role="tab" aria-controls="specif" aria-selected="false">Характеристики</a>
                 </li>
                 <li class="nav-item">
-                    <a class="active" id="reviews-tab" data-bs-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" tabindex="-1" aria-disabled="true">Отзывы</a>
+                    <a class="" id="reviews-tab" data-bs-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" tabindex="-1" aria-disabled="true">Отзывы</a>
                 </li>
                 <li class="nav-item">
                     <a class="" id="guarant-tab" data-bs-toggle="tab" href="#guarant" role="tab" aria-controls="guarant" tabindex="-1" aria-disabled="true">Гарантия</a>
@@ -407,7 +407,7 @@
                 
             </ul>
             <div class="tab-content" id="prodTabContent">
-                <div class="flex-column flex-lg-row gap-4 fade justify-content-between prod-pane tab-pane" id="descript" role="tabpanel" aria-labelledby="descript-tab">
+                <div class="flex-column flex-lg-row gap-4 fade justify-content-between prod-pane tab-pane active show" id="descript" role="tabpanel" aria-labelledby="descript-tab">
                     <div class="d-flex flex-column prod-pane__left">
                         <div class="prod-pane__text">
                             <p class="fw-bold text-uppercase">Технические характеристики</p>
@@ -517,7 +517,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex-column flex-lg-row gap-4 fade justify-content-between prod-pane tab-pane active show" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                <div class="flex-column flex-lg-row gap-4 fade justify-content-between prod-pane tab-pane" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
                     
                     <div class="prod-rev">
                         <div class="fw-bold prod-rev__title">
