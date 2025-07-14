@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru" class="">
+    @@include('html/head.html', {
+        'title': 'Товар'
+    })
+    <body>
+        <div class="wrapper">
+            @@include('html/header.html')
+
+            <main class="page">
+                <div data-observ></div>
+                <div class="crumbs">
+                    <div class="container d-flex align-items-center flex-wrap">
+                    <a href="#">
+                        Главная
+                    </a>
+                    <span>/</span>
+                    <a href="#">
+                        Каталог
+                    </a>
+                    <span>/</span>
+                    <a href="#">
+                        Освещение
+                    </a>
+                    <span>/</span>
+                    <a href="#">
+                        Фонари переносные
+                    </a>
+                    <span>/</span>
+                    <a href="#">
+                        A90065 Фонарь светодиодный аккумуляторный, карманный, со световым пучком 300+180 Лм
+                    </a>
+                    </div>
+                </div>
+                @@include('html/product-page/product.html')
+                @@include('html/product-page/product-cat.html')
+
+
+            </main>
+
+            @@include('html/footer.html')
+        </div>
+
+        @@include('html/popup-example.html')
+    </body>
+</html>

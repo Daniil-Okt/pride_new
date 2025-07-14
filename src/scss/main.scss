@@ -29,7 +29,7 @@
 * раскомментировать для использования
 */
 // @import 'libs/aos';
-// @import 'libs/swiper';
+@import 'libs/swiper';
 @import 'libs/slider-range';
 
 /**
@@ -50,7 +50,7 @@
 /**
 * Функциональные блоки используемые во всё проекте
 */
-// @import 'components/popup';
+@import 'components/popup';
 // @import 'components/checkbox';
 // @import 'components/tabs';
 // @import 'components/accordion';
@@ -63,3 +63,9 @@
 
 
 @import 'components/footer';
+
+
+
+// product-page
+@import 'components/product-page/product';
+@import 'components/product-page/product-cat';

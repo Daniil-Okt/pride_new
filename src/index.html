@@ -8,23 +8,24 @@
       @@include('html/header.html')
 
       <main class="page">
-      <div class="crumbs">
-        <div class="container d-flex align-items-center flex-wrap">
-          <a href="#">
-            Главная
-          </a>
-          <span>/</span>
-          <a href="#">
-            Каталог
-          </a>
-          <span>/</span>
-          <a href="#">
-            Мебель и хранение инструмента
-          </a>
+        <div data-observ></div>
+        <div class="crumbs">
+          <div class="container d-flex align-items-center flex-wrap">
+            <a href="#">
+              Главная
+            </a>
+            <span>/</span>
+            <a href="#">
+              Каталог
+            </a>
+            <span>/</span>
+            <a href="#">
+              Мебель и хранение инструмента
+            </a>
+          </div>
         </div>
-      </div>
-      @@include('html/catalog.html')
-      
+        @@include('html/catalog.html')
+        
 
 
       </main>
@@ -32,6 +33,6 @@
       @@include('html/footer.html')
     </div>
 
-    <!-- @@include('html/popup-example.html') -->
+    @@include('html/popup-example.html')
   </body>
 </html>

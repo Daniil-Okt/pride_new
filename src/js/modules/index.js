@@ -69,7 +69,7 @@ export  function toggleActiveClass(elements) {
 }
 //убрать меню при клики на ссылки меню
 export function toggleLinkMenuNoOpen() {
-    const menuLinkAll = document.querySelectorAll('.menu__link');
+    const menuLinkAll = document.querySelectorAll('a.mob-menu__link');
     if(menuLinkAll.length > 0) {
         menuLinkAll.forEach(link => {
         link.addEventListener('click', () => {

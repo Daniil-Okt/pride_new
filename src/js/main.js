@@ -8,7 +8,7 @@
  */
 // import MousePRLX from './libs/parallaxMouse'
 // import AOS from 'aos'
-// import Swiper, { Navigation, Pagination } from 'swiper';
+
 
 import BaseHelpers from './helpers/base-helpers';
 // import PopupManager from './modules/popup-manager';
@@ -16,11 +16,16 @@ import BurgerMenu from './modules/burger-menu';
 import { sliderRange } from './libs/slider-range';
 import { filterInit } from './modules/filterInit';
 
-import { sliderInit } from './modules/slider';
+import { initProductSliders, sliderInit } from './modules/slider';
 import { dropdownInit } from './modules/dropdown';
 import { searchOpenClose } from './modules/searchOpenClose';
 import { catalogGridSwitch } from './modules/catalogGridSwitch';
 import { menuClose } from './modules/menu-close';
+
+
+import { Tooltip, Modal } from 'bootstrap';
+
+
 
 
 // import Tabs from './modules/tabs';
@@ -32,7 +37,7 @@ import { menuClose } from './modules/menu-close';
 /* Добавление loaded для HTML после полной загрузки страницы */
 BaseHelpers.addLoadedClass();
 /* Фиксированный header */
-// BaseHelpers.headerFixed();
+BaseHelpers.headerFixed(80);
 
 
 /** ===================================================================================
@@ -103,8 +108,8 @@ new BurgerMenu().init();
 
 /* Cкрыть меню при клике на его ссылки ==================================================================
 */
-// import { toggleLinkMenuNoOpen } from './modules/index.js'
-//toggleLinkMenuNoOpen()
+import { toggleLinkMenuNoOpen } from './modules/index.js'
+toggleLinkMenuNoOpen()
 
 /* Cкрыть меню при клике вне его ========================================================================
 	* Добавить к меню класс 'your-menu'
@@ -187,6 +192,7 @@ new BurgerMenu().init();
 	* При клике на элемент, у всех элементов класс удаляется
 */
 import { toggleActiveClassParent } from './modules/index.js'
+import { inputPassword } from './modules/inputPassword.js';
 const linkDropHead = document.querySelectorAll('.link-drop__head');
 toggleActiveClassParent(linkDropHead)
 
@@ -204,10 +210,17 @@ document.querySelectorAll('.prod-card__h-i-like').forEach(like => {
 		like.classList.toggle('_active')
 	})
 })
+document.querySelectorAll('.prod-info__stat').forEach(like => {
+	like.addEventListener('click', () => {
+		like.classList.toggle('_active')
+	})
+})
+
 
 
 
 sliderInit()
+
 
 dropdownInit()
 
@@ -220,3 +233,23 @@ searchOpenClose()
 catalogGridSwitch()
 
 menuClose()
+
+inputPassword()
+
+// Инициализация tooltips 
+document.addEventListener('DOMContentLoaded', () => {
+	document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(el => {
+	    new Tooltip(el);
+	});
+  });
+
+
+
+// Инициализация модальных окон
+document.querySelectorAll('.modal').forEach(modalEl => {
+	new Modal(modalEl, {
+	  backdrop: true,
+	  focus: true,
+	  keyboard: true
+	});
+  });

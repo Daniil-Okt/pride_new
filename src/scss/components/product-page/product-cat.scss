@@ -1,0 +1,59 @@
+.prod-cat {
+    padding-bottom: rem(50);
+    
+    &__row {
+        @include adaptiveClamp(gap, 162, 40);
+    }
+
+    &__item {
+
+        @media(min-width:1400px){
+            .prod-card__title {
+                font-size: rem(18)
+            }
+            .prod-card__text {
+                font-size: rem(16);
+
+                &.big {
+                    font-size: rem(28)
+                }
+            }
+
+            .carousel-item {
+                height: rem(255);
+            }
+            .prod-card__h-text {
+                font-size: rem(16)
+            }
+            .prod-card__h-i {
+                width: rem(23);
+                height: rem(23);
+            }
+            .prod-card__btn {
+                font-size: rem(18);
+                padding: rem(14) rem(43) rem(11);
+            }
+            .prod-card__body {
+                gap: rem(16)
+            }
+            .prod-card__star-row {
+                gap: rem(5.5);
+            }
+            .prod-card__star {
+                width: rem(17);
+                height: rem(17);
+            }
+            .prod-card__star-text {
+                font-size: rem(14)
+            }
+        }
+    }
+
+    &__title {
+        @include adaptiveClamp(margin-bottom, 50, 26);
+    }
+}
+.container {
+}
+.t-two {
+}

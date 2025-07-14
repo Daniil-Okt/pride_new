@@ -43,7 +43,7 @@ class BaseHelpers {
   static addLoadedClass() {
     window.addEventListener('load', () => {
       setTimeout(() => {
-	      BaseHelpers.html.classList.add('loaded');
+	        BaseHelpers.html.classList.add('loaded');
       }, 0);
     });
   }
@@ -60,12 +60,14 @@ class BaseHelpers {
   }
 
   /** Функция для фиксированной шапки при скролле */
-  static headerFixed(offsetInPx = 0) {
+  static headerFixed(offsetInPx = 10) {
+   
     if (offsetInPx > 0) {
       // Используем событие scroll для управления фиксацией при заданном отступе
       window.addEventListener('scroll', () => {
         const scrollTop = window.scrollY || document.documentElement.scrollTop;
         BaseHelpers.html.classList.toggle('header-is-sticky', scrollTop > offsetInPx);
+        
       });
     } else if (BaseHelpers.firstScreen) {
       // Сохраняем поведение через IntersectionObserver, если offsetInPx не передано

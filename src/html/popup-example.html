@@ -1,4 +1,225 @@
-<div class="popup" data-popup="popup-1" data-close-overlay>
+<!-- для form-control-item есть классы _error и _ok -->
+
+<div class="modal fade" id="loginOrRegistrationModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content d-flex flex-column">
+            <div class="modal-header modal-box d-flex flex-column">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                <div class="modal-title fw-bold" id="modalVerticallyCenteredLabel">Вход или регистрация</div>
+            </div>
+            <div class="modal-body modal-box d-flex flex-column">
+                <div class="form-control-item">
+                    <input type="email" class="form-control" name="_email"  placeholder="E-mail">
+                </div>
+
+            </div>
+            <div class="modal-footer modal-box d-flex flex-column">
+
+
+                <button type="button" class="modal-btn btn btn-primary two">Продолжить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="registrationModalOne" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content d-flex flex-column">
+            <div class="modal-header modal-box d-flex flex-column">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                <button type="button" class="modal-btn-back">←</button>
+                <div class="modal-title fw-bold" id="modalVerticallyCenteredLabel">Регистрация</div>
+            </div>
+            <div class="modal-body modal-box d-flex flex-column">
+                <div class="form-control-item">
+                    <input type="text" class="form-control" name="_inn"  placeholder="ИНН организации">
+                </div>
+            </div>
+            <div class="modal-box">
+                <div class="modal-info d-flex flex-column">
+                    <p class="fw-bold big">ип тест22</p>
+                    <p>ИНН 99999999999</p>
+                    <p>г. Москва</p>
+                </div>
+            </div>
+            <div class="modal-footer modal-box d-flex flex-column">
+                <button type="button" class="modal-btn btn btn-primary two">Продолжить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade " id="registrationModalTwo" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content d-flex flex-column">
+            <div class="modal-header modal-box d-flex flex-column">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                <button type="button" class="modal-btn-back">←</button>
+                <div class="modal-title fw-bold" id="modalVerticallyCenteredLabel">Регистрация</div>
+            </div>
+            <div class="modal-body modal-box d-flex flex-column">
+                <div class="form-control-item">
+                    <input type="text" class="form-control" name="_name"  placeholder="Имя, фамилия">
+                </div>
+                <div class="form-control-item">
+                    <input type="tel" class="form-control" name="_phone"  placeholder="Телефон">
+                </div>
+                <div class="form-control-item">
+                    <input type="email" class="form-control" name="_email"  placeholder="E-mail">
+                </div>
+                <div class="form-control-item">
+                    <input type="password" class="form-control" name="_password"  placeholder="Пароль">
+                </div>
+                <div class="form-control-item">
+                    <label class=" form-check">
+                        <input class="form-check-input" name="manufacturer" type="checkbox" value="Jonnesway">
+                        <div class="form-check-icon"></div>
+                        <span class="form-check-text">
+                            <span>Получать информацию о новинках и специальных предложениях</span>
+                        </span>
+                    </label>
+                </div>
+            </div>
+            <div class="modal-footer modal-box d-flex flex-column">
+                <button type="button" class="modal-btn btn btn-primary two">Продолжить</button>
+                <div class="modal-text">
+                    Регистрируясь, я даю согласие на обработку персональных данных в соответствии
+                    с <a href="#">политикой конфиденциальности</a> pride.ru
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade show" style="display: block;" id="registrationModalCode" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content d-flex flex-column">
+            <div class="modal-header modal-box d-flex flex-column">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                <div class="modal-title fw-bold" id="modalVerticallyCenteredLabel">Введите код</div>
+            </div>
+            <div class="modal-body modal-box d-flex flex-column ">
+                <div class="form-control-item">
+                    <input type="text" class="form-control" name="_code"  placeholder="Код из письма">
+                </div>
+                <div class="modal-body-box d-flex flex-column align-items-center modal-text">
+                    <p class="text-center">Код отправлен на test@gmail.com
+                    <br/>Получить новый код можно через 00:57</p>
+                    <a class="text-center" href="#">Войти с паролем</a>
+                </div>
+            </div>
+   
+            <div class="modal-footer modal-box d-flex flex-column">
+                <button type="button" class="modal-btn btn btn-primary two">Получить новый код</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="registrationModalPassword"  tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content d-flex flex-column">
+            <div class="modal-header modal-box d-flex flex-column">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                <button type="button" class="modal-btn-back">←</button>
+                <div class="modal-title fw-bold" id="modalVerticallyCenteredLabel">Введите код</div>
+            </div>
+            <div class="modal-body modal-box d-flex flex-column ">
+                <div class="form-control-item input-password-item">
+                    <input type="password" class="form-control input-password" name="_password"  placeholder="Пароль">
+                    <div class="input-password-show">
+                        <svg width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.7335 4.2C9.99086 4.2 9.27867 4.495 8.75356 5.0201C8.22846 5.5452 7.93346 6.25739 7.93346 7C7.93346 7.74261 8.22846 8.4548 8.75356 8.9799C9.27867 9.505 9.99086 9.8 10.7335 9.8C11.4761 9.8 12.1883 9.505 12.7134 8.9799C13.2385 8.4548 13.5335 7.74261 13.5335 7C13.5335 6.25739 13.2385 5.5452 12.7134 5.0201C12.1883 4.495 11.4761 4.2 10.7335 4.2ZM10.7335 11.6667C9.49579 11.6667 8.3088 11.175 7.43363 10.2998C6.55846 9.42466 6.0668 8.23768 6.0668 7C6.0668 5.76232 6.55846 4.57534 7.43363 3.70017C8.3088 2.825 9.49579 2.33333 10.7335 2.33333C11.9711 2.33333 13.1581 2.825 14.0333 3.70017C14.9085 4.57534 15.4001 5.76232 15.4001 7C15.4001 8.23768 14.9085 9.42466 14.0333 10.2998C13.1581 11.175 11.9711 11.6667 10.7335 11.6667ZM10.7335 0C6.0668 0 2.08146 2.90267 0.466797 7C2.08146 11.0973 6.0668 14 10.7335 14C15.4001 14 19.3855 11.0973 21.0001 7C19.3855 2.90267 15.4001 0 10.7335 0Z" fill="#C9C9C9" />
+                            <path class="line-show" d="M1 1L20 13" stroke="#C9C9C9" stroke-width="2" stroke-linecap="round" />
+                        
+                        </svg>
+
+                    </div>
+                </div>
+
+                <div class="modal-body-box d-flex flex-column align-items-center modal-text">
+                    <p class="text-center">Вы входите в аккаунт test@gmail.com</p>
+                    <a class="text-center" href="#">Получить код для входа</a>
+                </div>
+            </div>
+   
+            <div class="modal-footer modal-box d-flex flex-column">
+                <button type="button" class="modal-btn btn btn-primary two">Войти</button>
+                <a href="#" class="modal-btn-link">Забыли пароль?</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="registrationModalIp" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content d-flex flex-column">
+            <div class="modal-header modal-box d-flex flex-column">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                <div class="modal-title fw-bold" id="modalVerticallyCenteredLabel">Вы приглашены в организацию ИП ТЕСТ</div>
+            </div>
+            <div class="modal-footer modal-box d-flex flex-column">
+                <button type="button" class="modal-btn btn btn-primary two">Принять приглашение</button>
+                <button type="button" class="modal-btn btn btn-primary two gray">Отклонить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="popup" data-popup="popup-1" data-close-overlay>
     <div class="popup__wrapper" data-close-overlay>
         <div class="popup__content">
             <button class="popup__close button-close" type="button">x</button>
@@ -7,4 +228,4 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
