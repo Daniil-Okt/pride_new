@@ -8,9 +8,9 @@
   <title>Главная</title>
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/main.min.css?_v=20250714140501">
+  <link rel="stylesheet" href="css/main.min.css?_v=20250714155810">
 
-  <script defer="defer" src="js/main.min.js?_v=20250714140501"></script>
+  <script defer="defer" src="js/main.min.js?_v=20250714155810"></script>
 </head>
 
   <body>
@@ -56,7 +56,7 @@
           <a href="#" class="header__logo logo">
             <img src="images/logo.svg" alt="">
           </a>
-          <a href="#" class="btn btn-primary d-lg-flex d-none header__btn-catalog">
+          <a href="#" class="btn btn-primary d-lg-flex d-none header__btn-catalog icon-menu-catalog">
             <span>Каталог</span>
             <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11.0193 -4.81668e-07L12 0.892352L6.65505 5.75277C6.56941 5.83112 6.46756 5.8933 6.35538 5.93573C6.2432 5.97816 6.12289 6 6.00139 6C5.87988 6 5.75958 5.97816 5.6474 5.93573C5.53521 5.8933 5.43337 5.83112 5.34773 5.75277L-2.23262e-07 0.892353L0.980725 0.000840621L6 4.56269L11.0193 -4.81668e-07Z" fill="white"/>
@@ -115,7 +115,7 @@
             </svg>
             <span>Профиль</span>
           </a>
-          <div href="#" class="header__btn-big header__burger icon-menu">
+          <div href="#" class="header__btn-big header__burger icon-menu icon-menu-basic">
             <img src="images/icon-menu-open.svg" alt="">
           </div>
         </div>
@@ -127,20 +127,20 @@
     
   </div>
 
-  <div class="header__mob-menu menu-basic mob-menu">
+  <div class="header__mob-menu mob-menu menu-basic">
     <div class="d-flex flex-column mob-menu__body">
-      <div class="icon-menu mob-menu__close">
+      <div class="icon-menu icon-menu-basic mob-menu__close">
         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M17 17L1 1M17 1L1 17" stroke="#292929" stroke-width="0.625" stroke-linecap="round"/>
         </svg>
       </div>
 
-      <div class="d-flex align-items-center justify-content-center mob-menu__head">
+      <a href="#" class="d-flex align-items-center justify-content-center mob-menu__head">
         <span class="fw-bold">ИП ТЕСТ</span>
         <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0.499999 1.48072L1.39235 0.5L6.25277 5.84495C6.33112 5.93059 6.3933 6.03244 6.43573 6.14462C6.47816 6.2568 6.5 6.37711 6.5 6.49861C6.5 6.62012 6.47816 6.74042 6.43573 6.8526C6.3933 6.96479 6.33112 7.06663 6.25277 7.15227L1.39235 12.5L0.500841 11.5193L5.06269 6.5L0.499999 1.48072Z" fill="#292929"/>
         </svg>
-      </div>
+      </a>
       <div class="d-flex align-items-center justify-content-center mob-menu__balance">
         <p>
           Баланс
@@ -168,7 +168,7 @@
       </div>
       <div class="d-flex flex-column mob-menu__list-row">
         <ul class="d-flex flex-column mob-menu__list p-0">
-          <li><a href="#" class="mob-menu__link">Каталог</a></li>
+          <li><a class="mob-menu__link icon-menu-catalog">Каталог</a></li>
           <li><a href="#" class="mob-menu__link">Новинки</a></li>
           <li><a href="#" class="mob-menu__link">Акции</a></li>
 
@@ -219,7 +219,182 @@
     </div>
 
   </div>
+  <div class="header__mob-menu mob-menu menu-catalog">
+    <div class="container">
+      <div class="d-flex flex-column mob-menu__body">
+        <div class="icon-menu mob-menu__close icon-menu-catalog">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 17L1 1M17 1L1 17" stroke="#292929" stroke-width="0.625" stroke-linecap="round"/>
+          </svg>
+        </div>
   
+        <div class="d-flex align-items-center justify-content-center mob-menu__head _two">
+          <span class="fw-bold">Каталог</span>
+        </div>
+        <div class="mob-menu__search">
+          <div class="form-control-item">
+            <input type="text" class="form-control" name="_search-catalog" placeholder="Всё для стройки, ремонта, производства">
+        </div>
+        </div>
+        <div class="d-flex flex-column mob-menu__list-row">
+          <ul class="d-flex flex-column mob-menu__list p-0">
+            <li>
+              <div class="d-flex flex-column link-drop mob-menu__link mob-menu__link-drop">
+                <div class="d-flex align-items-center justify-content-between gap-3 link-drop__head">
+                  <span>Ручной инструмент</span>
+                  <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.0193 -4.81668e-07L12 0.892352L6.65505 5.75277C6.56941 5.83112 6.46756 5.8933 6.35538 5.93573C6.2432 5.97816 6.12289 6 6.00139 6C5.87988 6 5.75958 5.97816 5.6474 5.93573C5.53521 5.8933 5.43337 5.83112 5.34773 5.75277L-2.23262e-07 0.892353L0.980725 0.000840621L6 4.56269L11.0193 -4.81668e-07Z" fill="#A0A0A0"/>
+                  </svg>
+                </div>
+                <ul class="d-flex flex-column gap-3 mob-menu__list">
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="d-flex flex-column link-drop mob-menu__link mob-menu__link-drop">
+                <div class="d-flex align-items-center justify-content-between gap-3 link-drop__head">
+                  <span>Пневмоинструмент</span>
+                  <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.0193 -4.81668e-07L12 0.892352L6.65505 5.75277C6.56941 5.83112 6.46756 5.8933 6.35538 5.93573C6.2432 5.97816 6.12289 6 6.00139 6C5.87988 6 5.75958 5.97816 5.6474 5.93573C5.53521 5.8933 5.43337 5.83112 5.34773 5.75277L-2.23262e-07 0.892353L0.980725 0.000840621L6 4.56269L11.0193 -4.81668e-07Z" fill="#A0A0A0"/>
+                  </svg>
+                </div>
+                <ul class="d-flex flex-column gap-3 mob-menu__list">
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="d-flex flex-column link-drop mob-menu__link mob-menu__link-drop">
+                <div class="d-flex align-items-center justify-content-between gap-3 link-drop__head">
+                  <span>Аккумуляторный инструмент</span>
+                  <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.0193 -4.81668e-07L12 0.892352L6.65505 5.75277C6.56941 5.83112 6.46756 5.8933 6.35538 5.93573C6.2432 5.97816 6.12289 6 6.00139 6C5.87988 6 5.75958 5.97816 5.6474 5.93573C5.53521 5.8933 5.43337 5.83112 5.34773 5.75277L-2.23262e-07 0.892353L0.980725 0.000840621L6 4.56269L11.0193 -4.81668e-07Z" fill="#A0A0A0"/>
+                  </svg>
+                </div>
+                <ul class="d-flex flex-column gap-3 mob-menu__list">
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="d-flex flex-column link-drop mob-menu__link mob-menu__link-drop">
+                <div class="d-flex align-items-center justify-content-between gap-3 link-drop__head">
+                  <span>Динамометрический инструмент</span>
+                  <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.0193 -4.81668e-07L12 0.892352L6.65505 5.75277C6.56941 5.83112 6.46756 5.8933 6.35538 5.93573C6.2432 5.97816 6.12289 6 6.00139 6C5.87988 6 5.75958 5.97816 5.6474 5.93573C5.53521 5.8933 5.43337 5.83112 5.34773 5.75277L-2.23262e-07 0.892353L0.980725 0.000840621L6 4.56269L11.0193 -4.81668e-07Z" fill="#A0A0A0"/>
+                  </svg>
+                </div>
+                <ul class="d-flex flex-column gap-3 mob-menu__list">
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="d-flex flex-column link-drop mob-menu__link mob-menu__link-drop">
+                <div class="d-flex align-items-center justify-content-between gap-3 link-drop__head">
+                  <span>Оборудование для СТО</span>
+                  <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.0193 -4.81668e-07L12 0.892352L6.65505 5.75277C6.56941 5.83112 6.46756 5.8933 6.35538 5.93573C6.2432 5.97816 6.12289 6 6.00139 6C5.87988 6 5.75958 5.97816 5.6474 5.93573C5.53521 5.8933 5.43337 5.83112 5.34773 5.75277L-2.23262e-07 0.892353L0.980725 0.000840621L6 4.56269L11.0193 -4.81668e-07Z" fill="#A0A0A0"/>
+                  </svg>
+                </div>
+                <ul class="d-flex flex-column gap-3 mob-menu__list">
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="d-flex flex-column link-drop mob-menu__link mob-menu__link-drop">
+                <div class="d-flex align-items-center justify-content-between gap-3 link-drop__head">
+                  <span>Наборы инструментов</span>
+                  <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.0193 -4.81668e-07L12 0.892352L6.65505 5.75277C6.56941 5.83112 6.46756 5.8933 6.35538 5.93573C6.2432 5.97816 6.12289 6 6.00139 6C5.87988 6 5.75958 5.97816 5.6474 5.93573C5.53521 5.8933 5.43337 5.83112 5.34773 5.75277L-2.23262e-07 0.892353L0.980725 0.000840621L6 4.56269L11.0193 -4.81668e-07Z" fill="#A0A0A0"/>
+                  </svg>
+                </div>
+                <ul class="d-flex flex-column gap-3 mob-menu__list">
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="d-flex flex-column link-drop mob-menu__link mob-menu__link-drop">
+                <div class="d-flex align-items-center justify-content-between gap-3 link-drop__head">
+                  <span>Режущий инструмент</span>
+                  <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.0193 -4.81668e-07L12 0.892352L6.65505 5.75277C6.56941 5.83112 6.46756 5.8933 6.35538 5.93573C6.2432 5.97816 6.12289 6 6.00139 6C5.87988 6 5.75958 5.97816 5.6474 5.93573C5.53521 5.8933 5.43337 5.83112 5.34773 5.75277L-2.23262e-07 0.892353L0.980725 0.000840621L6 4.56269L11.0193 -4.81668e-07Z" fill="#A0A0A0"/>
+                  </svg>
+                </div>
+                <ul class="d-flex flex-column gap-3 mob-menu__list">
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="d-flex flex-column link-drop mob-menu__link mob-menu__link-drop">
+                <div class="d-flex align-items-center justify-content-between gap-3 link-drop__head">
+                  <span>Расходные материалы</span>
+                  <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.0193 -4.81668e-07L12 0.892352L6.65505 5.75277C6.56941 5.83112 6.46756 5.8933 6.35538 5.93573C6.2432 5.97816 6.12289 6 6.00139 6C5.87988 6 5.75958 5.97816 5.6474 5.93573C5.53521 5.8933 5.43337 5.83112 5.34773 5.75277L-2.23262e-07 0.892353L0.980725 0.000840621L6 4.56269L11.0193 -4.81668e-07Z" fill="#A0A0A0"/>
+                  </svg>
+                </div>
+                <ul class="d-flex flex-column gap-3 mob-menu__list">
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="d-flex flex-column link-drop mob-menu__link mob-menu__link-drop">
+                <div class="d-flex align-items-center justify-content-between gap-3 link-drop__head">
+                  <span>Специнструмент для авторемонта</span>
+                  <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.0193 -4.81668e-07L12 0.892352L6.65505 5.75277C6.56941 5.83112 6.46756 5.8933 6.35538 5.93573C6.2432 5.97816 6.12289 6 6.00139 6C5.87988 6 5.75958 5.97816 5.6474 5.93573C5.53521 5.8933 5.43337 5.83112 5.34773 5.75277L-2.23262e-07 0.892353L0.980725 0.000840621L6 4.56269L11.0193 -4.81668e-07Z" fill="#A0A0A0"/>
+                  </svg>
+                </div>
+                <ul class="d-flex flex-column gap-3 mob-menu__list">
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="d-flex flex-column link-drop mob-menu__link mob-menu__link-drop">
+                <div class="d-flex align-items-center justify-content-between gap-3 link-drop__head">
+                  <span>Освещение</span>
+                  <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.0193 -4.81668e-07L12 0.892352L6.65505 5.75277C6.56941 5.83112 6.46756 5.8933 6.35538 5.93573C6.2432 5.97816 6.12289 6 6.00139 6C5.87988 6 5.75958 5.97816 5.6474 5.93573C5.53521 5.8933 5.43337 5.83112 5.34773 5.75277L-2.23262e-07 0.892353L0.980725 0.000840621L6 4.56269L11.0193 -4.81668e-07Z" fill="#A0A0A0"/>
+                  </svg>
+                </div>
+                <ul class="d-flex flex-column gap-3 mob-menu__list">
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+  
+      </div>
+    </div>
+
+  </div>
 
 </header>
 
