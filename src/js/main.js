@@ -252,4 +252,18 @@ document.querySelectorAll('.modal').forEach(modalEl => {
 	  focus: true,
 	  keyboard: true
 	});
-  });
+});
+
+
+
+
+document.querySelectorAll('.icon-menu-basic').forEach(btn => {
+	btn.addEventListener('click', () => {
+		document.documentElement.classList.toggle('menu-basic-open')
+	})
+});
+document.querySelectorAll('.icon-menu-catalog').forEach(btn => {
+	btn.addEventListener('click', () => {
+		document.documentElement.classList.toggle('menu-catalog-open')
+	})
+});
