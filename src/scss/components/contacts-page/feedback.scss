@@ -1,0 +1,210 @@
+.feedback {
+    @include adaptiveClamp(padding-bottom, 112, 30);
+
+    &__head {
+        margin-bottom: rem(70);
+
+        @media(max-width:1199px){
+            margin-bottom: rem(30);
+        }
+        @media(max-width:575px){
+            margin-bottom: rem(24);
+        }
+
+        p {
+            font-size: rem(20);
+
+            @media(max-width:1199px){
+                font-size: rem(18);
+            }
+            @media(max-width:575px){
+                font-size: rem(14);
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: rem(15);
+    }
+
+    &__row {
+        gap: rem(30);
+
+        @media(max-width:768px){
+            gap: rem(40);
+        }
+    }
+
+    &__left {
+        max-width: rem(433);
+        width: 100%;
+
+        @media(max-width:1199px){
+            max-width: rem(385);
+        }
+    }
+
+
+
+    .man-card {
+        padding: 0;
+        border: none;
+        width: 100%;
+        p.t-gray {
+            margin-bottom: auto;
+            padding-bottom: rem(10);
+        }
+        @media(min-width:1200px){
+            a, p {
+                font-size: rem(16);
+
+
+                &.fw-bold {
+                    font-size: rem(22);
+                }
+
+                &.t-gray {
+                    padding-bottom: rem(16);
+                }
+            }
+        }
+        @media(min-width:992px) and (max-width:1199px) {
+            p.fw-bold {
+                font-size: rem(18);
+            }
+        }
+
+
+        &__head {
+  
+        }
+    
+        &__img {
+            width: rem(137);
+            min-width: rem(137);
+            height: rem(137);
+
+            
+        }
+    
+        &__head-body {
+            width: 100%;
+        }
+    
+        &__graf {
+            @media(min-width:1200px){
+                margin-top: rem(10);
+            }
+        }
+    
+        &__graf-item {
+        }
+    
+        &__bot {
+            @media(min-width:992px){
+                margin-top: rem(30);
+            }
+        }
+    
+        &__bot-row {
+        }
+    
+        &__bot-link {
+        }
+    
+        &__btn {
+            width: auto;
+            flex: auto;
+
+            @media(max-width:405px){
+                width: 100%;
+            }
+        }
+    }
+    
+    &__left-bot {
+        margin-top: rem(84);
+        .fw-bold {
+            font-size: rem(28);
+            line-height: 120%;
+            margin-bottom: rem(15);
+
+            @media(max-width:1199px){
+                font-size: rem(18);
+            }
+            @media(max-width:575px){
+                font-size: rem(16);
+                margin-bottom: rem(10);
+            }
+        }
+
+        .d-flex {
+            gap: rem(30);
+        }
+
+        @media(max-width:1199px){
+            margin-top: rem(24);
+        }
+    }
+    
+
+    &__right {
+        max-width: rem(781);
+        width: 100%;
+
+        gap: rem(10);
+        .d-flex {
+            gap: rem(10);
+        }
+
+        .form-control-item {
+            .icon {
+                right: rem(15);
+            }
+        }
+        .form-control {
+            padding-left: rem(15);
+            padding-right: rem(15);
+
+            @media(min-width:1200px){
+                font-size: rem(18);
+                padding: rem(20) rem(20) rem(16.6);
+            }
+        }
+
+        @media(min-width:1200px){
+            .form-btn {
+                font-size: rem(20);
+                padding: rem(25) rem(24) rem(23); 
+            }
+            .form-file {
+                min-height: rem(74);
+            }
+        }
+
+        .form-btn {
+            @media(max-width:1199px){
+                font-size: rem(16);
+            }
+            @media(max-width:768px){
+                font-size: rem(14);
+            }
+        }
+
+        textarea {
+            @media(max-width:991px){
+                min-height: rem(168);
+            }
+        }
+        .form-file {
+            @media(max-width:991px){
+                font-size: rem(14);
+            }
+        }
+
+    }
+
+    &__right-row {
+    }
+}
+

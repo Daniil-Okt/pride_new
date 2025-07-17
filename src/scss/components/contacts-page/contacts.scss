@@ -32,6 +32,7 @@
         border: 1px solid #a0a0a0;
         box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);
         padding: rem(40);
+        transition: all 0.3s ease  0s;
 
         @media(max-width:1199px){
             padding: rem(35);
@@ -39,11 +40,12 @@
         @media(max-width:575px){
             padding: rem(20);
         }
-        // gap: rem(25);
-
-        &:first-child {
+        
+        &:hover {
             background: #f4f4f4;
         }
+
+ 
 
         a, p {
             font-size: rem(18);
@@ -76,9 +78,6 @@
                 margin-bottom: rem(4);
             }
         }
-
-
-        
     }
 
     p.contacts__item-title {

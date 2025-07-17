@@ -193,6 +193,13 @@ p {
     }
     
     
+    .form-control-item.icon-ch & {
+        padding-right: rem(46);
+
+        &:focus + .icon {
+            opacity: 0;
+        }
+    }
 }
 .form-control-item {
     position: relative;
@@ -218,6 +225,21 @@ p {
     }
     &._error input {
         border-color: red;
+    }
+
+
+    .icon {
+        pointer-events: none;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: rem(20);
+        opacity: 0;
+        transition: all 0.2s ease  0s;
+    }
+
+    &.icon-active .icon {
+        opacity: 1;
     }
 }
 .form-check {
@@ -299,7 +321,6 @@ p {
         }
     }
 }
-
 .input-password {
 
     &.form-control {
@@ -333,6 +354,88 @@ p {
 
 
 }
+.item-radio {
+    display: flex;
+    align-items: center;
+    gap: rem(15);
+    font-size: rem(20);
+
+    &__input {
+        display: none;
+
+        &:checked + .item-radio__icon::before {
+            opacity: 1;
+        }
+    }
+
+    &__icon {
+        width: rem(22);
+        height: rem(22);
+        border: 1px solid var(--bs-orange);
+        border-radius: 50%;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: rem(14);
+            height: rem(14);
+            background: var(--bs-orange);
+            top:50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            border-radius: 50%;
+            opacity: 0;
+        } 
+    }
+
+    span {
+        padding-top: rem(4);
+    }
+
+    @media(max-width:1199px){
+        span {
+            padding-top: rem(3);
+        }
+        font-size: rem(14);
+    }
+}
+
+.form-file {
+    position: relative;
+    input {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;   
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: rem(10);
+    color: $gray-400;
+    transition: all 0.3s ease  0s;
+    svg {
+        path {
+            transition: all 0.3s ease  0s;
+        }
+    }
+
+    &:hover {
+        color: var(--bs-orange);
+        svg {
+            path {
+                stroke: var(--bs-orange);
+            }
+        }
+    }
+}
+
 
 
 

@@ -114,7 +114,7 @@ toggleLinkMenuNoOpen()
 /* Cкрыть меню при клике вне его ========================================================================
 	* Добавить к меню класс 'your-menu'
 */
-// import { toggleLinkMenuNoOpen } from './modules/index.js'
+// import { toggleOutClickMenuRemoveOpen } from './modules/index.js'
 // toggleOutClickMenuRemoveOpen()
 
 /* Удалить класс _active при клике вне элемента =========================================================
@@ -193,6 +193,7 @@ toggleLinkMenuNoOpen()
 */
 import { toggleActiveClassParent } from './modules/index.js'
 import { inputPassword } from './modules/inputPassword.js';
+import { fileInput } from './modules/fileInput.js';
 const linkDropHead = document.querySelectorAll('.link-drop__head');
 toggleActiveClassParent(linkDropHead)
 
@@ -236,6 +237,8 @@ menuClose()
 
 inputPassword()
 
+fileInput()
+
 // Инициализация tooltips 
 document.addEventListener('DOMContentLoaded', () => {
 	document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(el => {
@@ -266,4 +269,29 @@ document.querySelectorAll('.icon-menu-catalog').forEach(btn => {
 	btn.addEventListener('click', () => {
 		document.documentElement.classList.toggle('menu-catalog-open')
 	})
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Находим все контейнеры с классом icon-ch
+    const containers = document.querySelectorAll('.icon-ch');
+    
+    containers.forEach(container => {
+        // Находим input внутри контейнера
+        const input = container.querySelector('input');
+        
+        // Обработчик события ввода
+        function handleInput() {
+            if (input.value.trim() !== '') {
+                container.classList.add('icon-active');
+            } else {
+                container.classList.remove('icon-active');
+            }
+        }
+        
+        // Инициализация при загрузке
+        handleInput();
+        
+        // Слушаем события ввода
+        input.addEventListener('input', handleInput);
+    });
 });
