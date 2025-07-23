@@ -19,23 +19,23 @@ function checkFormUnlock(form) {
   if (recaptcha) {
       // console.log(recaptcha);
       var intervalId = setInterval(function () {
-      var response = grecaptcha.getResponse();
-      // console.log(response)
-      if (response.length == 0) {
-          resultCheck = false;
-          // console.log("Рекапча не заполнена");
-      } else {
-          resultCheck = true;
-          // console.log("Рекапча заполнена");
-          form.querySelector('button').addEventListener('click', () => {
-          clearInterval(intervalId);
-          })
-      }
-      if (resultCheck) {
-          form.classList.add('unlock');
-      } else {
-          form.classList.remove('unlock');
-      }
+        var response = grecaptcha.getResponse();
+        // console.log(response)
+        if (response.length == 0) {
+            resultCheck = false;
+            // console.log("Рекапча не заполнена");
+        } else {
+            resultCheck = true;
+            // console.log("Рекапча заполнена");
+            form.querySelector('button').addEventListener('click', () => {
+            clearInterval(intervalId);
+            })
+        }
+        if (resultCheck) {
+            form.classList.add('unlock');
+        } else {
+            form.classList.remove('unlock');
+        }
       }, 1000);
   } else {
       resultCheck = true;
@@ -420,3 +420,63 @@ export {
 //       })
 // }
 
+
+
+window.addEventListener('load', () => {
+    const recaptcha = document.querySelector('.g-recaptcha');
+    const forms = document.querySelectorAll('form')
+      if (recaptcha) {
+          console.log(recaptcha);
+          var intervalId = setInterval(function () {
+            var response = grecaptcha.getResponse();
+            console.log(response)
+            if (response.length == 0) {
+                resultCheck = false;
+                console.log("Рекапча не заполнена");
+            } else {
+                resultCheck = true;
+                console.log("Рекапча заполнена");
+                forms.forEach(form => {
+//                     form.querySelector('button').addEventListener('click', () => {
+//                         clearInterval(intervalId);
+    
+//                         if (resultCheck) {
+//                             form.classList.add('unlock');
+//                         } else {
+//                             form.classList.remove('unlock');
+//                         }
+//                     });
+					    if (resultCheck) {
+                            form.classList.add('unlock');
+// 							clearInterval(intervalId);
+                        } else {
+                            form.classList.remove('unlock');
+                        }
+                })
+            }
+        }, 1000);
+    };
+})
+
+
+
+window.addEventListener('load', () => {
+    const forms = document.querySelectorAll('form')
+    forms.forEach(form => {
+        const recaptcha = form.querySelector('.g-recaptcha');
+
+        if (recaptcha) {
+            recaptcha.addEventListener('click', () => {
+                const response = grecaptcha.getResponse();
+
+                if(response.length == 0) {
+                    console.log("Рекапча не заполнена");
+                    form.classList.remove('unlock');
+                } else {
+                    console.log("Рекапча заполнена");
+                    form.classList.add('unlock');
+                }
+            })
+        }
+    });
+})

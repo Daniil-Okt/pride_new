@@ -271,6 +271,8 @@ document.querySelectorAll('.icon-menu-catalog').forEach(btn => {
 	})
 });
 
+
+
 document.addEventListener('DOMContentLoaded', function() {
     // Находим все контейнеры с классом icon-ch
     const containers = document.querySelectorAll('.icon-ch');
@@ -295,3 +297,28 @@ document.addEventListener('DOMContentLoaded', function() {
         input.addEventListener('input', handleInput);
     });
 });
+
+
+
+// document.addEventListener('DOMContentLoaded', function() {
+// 	const stars = document.querySelectorAll('.rev-page__str .star');
+	
+// 	stars.forEach(star => {
+// 		star.addEventListener('click', function() {
+// 			const rating = parseInt(this.parentElement.getAttribute('data-rating'));
+			
+// 			// Удаляем класс active у всех звезд
+// 			stars.forEach(s => s.classList.remove('active'));
+			
+// 			// Добавляем класс active всем звездам до текущей (включительно)
+// 			stars.forEach(s => {
+// 			if(parseInt(s.parentElement.getAttribute('data-rating')) <= rating) {
+// 				s.classList.add('active');
+// 			}
+// 			});
+			
+// 			// Можно добавить здесь сохранение выбранной оценки
+// 			console.log('Выбрана оценка:', rating);
+// 		})
+// 	});
+//   });

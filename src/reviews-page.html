@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru" class="">
+  @@include('html/head.html', {
+    'title': 'Отзыв о товаре'
+  })
+  <body>
+    <div class="wrapper">
+      @@include('html/header.html')
+
+      <main class="page">
+        <div data-observ></div>
+        <div class="crumbs">
+            <div class="container d-flex align-items-center flex-wrap">
+                <a href="#">
+                    Главная
+                </a>
+                <span>/</span>
+                <a href="#">
+                    Пневмоинструмент
+                </a>
+                <span>/</span>
+                <a href="#">
+                    AIW12717 Гайковерт ударный пневматический 1/2"DR 7500 об/мин, 717 Нм Thorvik
+                </a>
+            </div>
+        </div>
+        @@include('html/reviews-page/rev-page.html')
+        
+
+
+      </main>
+
+      @@include('html/footer.html')
+    </div>
+
+    @@include('html/popup-example.html')
+  </body>
+</html>
