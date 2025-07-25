@@ -1,0 +1,1598 @@
+<!doctype html>
+<html lang="ru" class="">
+  <head>
+  <style>html { opacity: 0; }</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cравнение товаров</title>
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/main.min.css?_v=20250725200017">
+
+  <script defer="defer" src="js/main.min.js?_v=20250725200017"></script>
+</head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+  <div class="container">
+    <div class="d-flex header__body">
+
+      <div class="w-100 header__content">
+        <div class="align-items-center d-lg-flex d-none gap-2 header__top w-100">
+            <div class="dropdown header__city">
+              <button class="d-flex align-items-center bs-link dropdown-toggle gap-1" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                <span>Москва</span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="active dropdown-item" href="#" data-value="Action">Москва</a></li>
+                  <li><a class="dropdown-item" href="#" data-value="Another action">Питер</a></li>
+                  <li><a class="dropdown-item" href="#" data-value="Something else">Город-65</a></li>
+              </ul>
+            </div>
+            <ul class="d-flex ms-auto flex-row header__nav mb-xl-0 navbar-nav">
+              <li class="nav-item"></li>
+                <a class="bs-link nav-link" href="#">Новинки</a>
+              
+              <li class="nav-item">
+                <a class="bs-link nav-link" href="#">Акции</a>
+              </li>
+              <li class="nav-item">
+                <a class="bs-link nav-link" href="#">Оплата</a>
+              </li>
+              <li class="nav-item">
+                <a class="bs-link nav-link" href="#">Доставка</a>
+              </li>
+              <li class="nav-item">
+                <a class="bs-link nav-link" href="#" tabindex="-1" aria-disabled="true">Обмен и возврат</a>
+              </li>
+              <li class="nav-item">
+                <a class="bs-link nav-link" href="#">Контакты</a>
+              </li>
+            </ul>
+        </div>
+        <div class="d-flex align-items-center header__bottom">
+          <a href="#" class="header__logo logo">
+            <img src="images/logo.svg" alt="">
+          </a>
+          <div class="btn btn-primary d-lg-flex d-none header__btn-catalog icon-menu icon-menu-catalog">
+            <span>Каталог</span>
+          </div>
+          <form action="#" class="d-flex header__search w-md-auto">
+            <input class="w-100" type="text" name="search" placeholder="Что вы хотите найти?">
+            <button type="submit" class="header__btn-big header__search-btn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.4805 15.875C15.3358 15.875 18.4611 12.657 18.4611 8.6875C18.4611 4.71795 15.3358 1.5 11.4805 1.5C7.62529 1.5 4.5 4.71795 4.5 8.6875C4.5 12.657 7.62529 15.875 11.4805 15.875Z" stroke="#292929" stroke-width="2"/>
+                <path d="M9.61584 22.5261L13.3452 15.875" stroke="#292929" stroke-width="2"/>
+              </svg>
+            </button>
+          </form>
+
+          <div href="#" class="d-flex ms-auto d-md-none header__btn-big header__search-open search-open">
+            <img src="images/icon-h-serch.svg" alt="">
+          </div>
+          <a href="#" class="header__btn-big stroke d-lg-flex d-none">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.8301 9.90918V14.9316H12.5566V9.90918H14.8301ZM9.33301 1.66406V14.9316H7.05957V1.66406H9.33301ZM3.83594 6.24512V14.9316H1.5625V6.24512H3.83594Z" stroke="#292929" stroke-width="1.39118"/>
+            </svg>
+            <span>Сравнение</span>
+          </a>
+          <a href="#" class="header__btn-big fill">
+            <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.6969 15.9494L7.48767 14.8653C6.08386 13.6005 4.92329 12.5094 4.00594 11.592C3.0886 10.6747 2.3589 9.85104 1.81683 9.12106C1.27476 8.39108 0.896152 7.72058 0.680994 7.10958C0.465835 6.49857 0.357978 5.87311 0.357422 5.2332C0.357422 3.92668 0.795244 2.8356 1.67089 1.95995C2.54653 1.08431 3.63762 0.646484 4.94413 0.646484C5.66689 0.646484 6.3549 0.799375 7.00815 1.10516C7.66141 1.41094 8.22433 1.84181 8.6969 2.39777C9.16947 1.84181 9.73238 1.41094 10.3856 1.10516C11.0389 0.799375 11.7269 0.646484 12.4497 0.646484C13.7562 0.646484 14.8473 1.08431 15.7229 1.95995C16.5986 2.8356 17.0364 3.92668 17.0364 5.2332C17.0364 5.87256 16.9288 6.49802 16.7136 7.10958C16.4985 7.72114 16.1196 8.39163 15.577 9.12106C15.0343 9.85049 14.3046 10.6741 13.3879 11.592C12.4711 12.5099 11.3105 13.601 9.90612 14.8653L8.6969 15.9494ZM8.6969 13.6978C10.0312 12.5024 11.1292 11.4775 11.991 10.623C12.8527 9.76848 13.5338 9.02488 14.0342 8.39219C14.5345 7.7595 14.882 7.19631 15.0766 6.70261C15.2712 6.20891 15.3685 5.71911 15.3685 5.2332C15.3685 4.39925 15.0905 3.70429 14.5345 3.14833C13.9786 2.59236 13.2836 2.31438 12.4497 2.31438C11.7964 2.31438 11.1918 2.4984 10.6358 2.86645C10.0799 3.2345 9.69764 3.70374 9.48915 4.27416H7.90465C7.69616 3.70429 7.31394 3.23534 6.75797 2.86729C6.20201 2.49924 5.59739 2.31494 4.94413 2.31438C4.11019 2.31438 3.41523 2.59236 2.85926 3.14833C2.3033 3.70429 2.02532 4.39925 2.02532 5.2332C2.02532 5.71967 2.12261 6.20975 2.3172 6.70345C2.51179 7.19714 2.85926 7.76006 3.35963 8.39219C3.86 9.02432 4.54106 9.76793 5.40281 10.623C6.26455 11.4781 7.36258 12.503 8.6969 13.6978Z" fill="#292929"/>
+            </svg>
+            <span>Избранное</span>
+          </a>
+          <a href="#" class="header__btn-big stroke">
+            <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_2022_7877)">
+                <path d="M0.949219 15.2845L1.91165 3.97363H11.144L12.4273 15.2845H0.949219Z" stroke="#292929" stroke-width="1.39118"/>
+                <path d="M8.63407 3.30756C8.63407 2.20518 7.76724 1.31152 6.69789 1.31152C5.62858 1.31152 4.76172 2.20518 4.76172 3.30756" stroke="#292929" stroke-width="1.39118"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_2022_7877">
+                  <rect width="12.9078" height="15.3029" fill="white" transform="translate(0.244141 0.646484)"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <span>Корзина</span>
+          </a>
+          <a href="#" class="header__btn-big stroke">
+            <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_2022_7882)">
+                <path d="M6.4478 6.66453C7.88166 6.66453 9.04403 5.46622 9.04403 3.98803C9.04403 2.50984 7.88166 1.31152 6.4478 1.31152C5.01394 1.31152 3.85156 2.50984 3.85156 3.98803C3.85156 5.46622 5.01394 6.66453 6.4478 6.66453Z" stroke="#292929" stroke-width="1.39118"/>
+                <path d="M12.1826 15.8128V14.5275C12.1826 11.4041 9.72649 8.87207 6.69676 8.87207C3.66703 8.87207 1.21094 11.4041 1.21094 14.5275V15.8128" stroke="#292929" stroke-width="1.39118"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_2022_7882">
+                  <rect width="12.2624" height="15.3029" fill="white" transform="translate(0.566406 0.646484)"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <span>Профиль</span>
+          </a>
+          <div href="#" class="header__btn-big header__burger icon-menu icon-menu-basic">
+            <img src="images/icon-menu-open.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    
+  </div>
+
+  <div class="header__mob-menu mob-menu your-menu menu-basic">
+    <div class="d-flex flex-column mob-menu__body">
+      <div class="icon-menu icon-menu-basic mob-menu__close">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 17L1 1M17 1L1 17" stroke="#292929" stroke-width="0.625" stroke-linecap="round"/>
+        </svg>
+      </div>
+
+      <a href="#" class="d-flex align-items-center justify-content-center mob-menu__head">
+        <span class="fw-bold">ИП ТЕСТ</span>
+        <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.499999 1.48072L1.39235 0.5L6.25277 5.84495C6.33112 5.93059 6.3933 6.03244 6.43573 6.14462C6.47816 6.2568 6.5 6.37711 6.5 6.49861C6.5 6.62012 6.47816 6.74042 6.43573 6.8526C6.3933 6.96479 6.33112 7.06663 6.25277 7.15227L1.39235 12.5L0.500841 11.5193L5.06269 6.5L0.499999 1.48072Z" fill="#292929"/>
+        </svg>
+      </a>
+      <div class="d-flex align-items-center justify-content-center mob-menu__balance">
+        <p>
+          Баланс
+        </p>
+        <p class="fw-bold">
+          12 687₽
+        </p>
+      </div>
+      <div class="d-flex align-items-center justify-content-between mob-menu__ctr">
+        <div class="dropdown header__city">
+          <button class="d-flex align-items-center bs-link dropdown-toggle gap-1" type="button" id="mobMenuCity" data-bs-toggle="dropdown" aria-expanded="false">
+            <span>Москва</span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="mobMenuCity">
+              <li><a class="active dropdown-item" href="#" data-value="Action">Москва</a></li>
+              <li><a class="dropdown-item" href="#" data-value="Another action">Питер</a></li>
+              <li><a class="dropdown-item" href="#" data-value="Something else">Город-65</a></li>
+          </ul>
+        </div>
+        <a href="#" class="d-flex align-items-center justify-content-center mob-menu__phone">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.2018 13.9737C15.1018 13.8737 14.5018 15.3737 13.7018 15.7737C12.4018 16.4737 10.0018 13.9737 10.0018 13.9737C10.0018 13.9737 7.50184 11.5737 8.10184 10.2737C8.60184 9.47372 10.1018 8.87372 10.0018 7.77372C9.90184 6.77372 7.70184 3.17372 6.60184 4.17372C4.20184 6.37372 4.00184 7.27372 4.00184 9.07372C3.90184 12.1737 7.90184 16.0737 7.90184 16.0737C8.30184 16.4737 11.8018 20.0737 14.9018 19.9737C16.7018 19.9737 17.6018 19.7737 19.8018 17.3737C20.8018 16.2737 17.3018 14.0737 16.2018 13.9737Z" fill="#FC5521"/>
+          </svg>
+        </a>
+      </div>
+      <div class="d-flex flex-column mob-menu__list-row">
+        <ul class="d-flex flex-column mob-menu__list p-0">
+          <li><a class="mob-menu__link icon-menu-catalog">Каталог</a></li>
+          <li><a href="#" class="mob-menu__link">Новинки</a></li>
+          <li><a href="#" class="mob-menu__link">Акции</a></li>
+
+        </ul>
+        <ul class="d-flex flex-column mob-menu__list p-0">
+          <li><a href="#" class="mob-menu__link">Мои заказы</a></li>
+          <li><a href="#" class="mob-menu__link">Мои организации</a></li>
+          <li><a href="#" class="mob-menu__link">Сравнение</a></li>
+        </ul>
+        <ul class="d-flex flex-column mob-menu__list p-0">
+          <li><a href="#" class="mob-menu__link">Личные данные</a></li>
+          <li>
+            <div class="d-flex flex-column link-drop mob-menu__link mob-menu__link-drop">
+              <div class="d-flex align-items-center justify-content-between gap-3 link-drop__head">
+                <span>Покупателям</span>
+                <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.0193 -4.81668e-07L12 0.892352L6.65505 5.75277C6.56941 5.83112 6.46756 5.8933 6.35538 5.93573C6.2432 5.97816 6.12289 6 6.00139 6C5.87988 6 5.75958 5.97816 5.6474 5.93573C5.53521 5.8933 5.43337 5.83112 5.34773 5.75277L-2.23262e-07 0.892353L0.980725 0.000840621L6 4.56269L11.0193 -4.81668e-07Z" fill="#A0A0A0"/>
+                </svg>
+              </div>
+              <ul class="d-flex flex-column gap-3 mob-menu__list">
+                <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="d-flex flex-column link-drop mob-menu__link mob-menu__link-drop">
+              <div class="d-flex align-items-center justify-content-between gap-3 link-drop__head">
+                <span>Сервисы</span>
+                <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.0193 -4.81668e-07L12 0.892352L6.65505 5.75277C6.56941 5.83112 6.46756 5.8933 6.35538 5.93573C6.2432 5.97816 6.12289 6 6.00139 6C5.87988 6 5.75958 5.97816 5.6474 5.93573C5.53521 5.8933 5.43337 5.83112 5.34773 5.75277L-2.23262e-07 0.892353L0.980725 0.000840621L6 4.56269L11.0193 -4.81668e-07Z" fill="#A0A0A0"/>
+                </svg>
+              </div>
+              <ul class="d-flex flex-column gap-3 mob-menu__list">
+                <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="btn gray mob-menu__btn mt-auto w-100">
+        Задать вопрос
+      </div>
+    </div>
+
+  </div>
+  <div class="header__mob-menu mob-menu your-menu menu-catalog">
+    <div class="container">
+      <div class="d-flex flex-column mob-menu__body">
+        <div class="icon-menu icon-menu-catalog mob-menu__close">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 17L1 1M17 1L1 17" stroke="#292929" stroke-width="0.625" stroke-linecap="round"/>
+          </svg>
+        </div>
+  
+        <div class="d-flex align-items-center justify-content-center mob-menu__head _two">
+          <span class="fw-bold">Каталог</span>
+        </div>
+        <div class="mob-menu__search">
+          <div class="form-control-item">
+            <input type="text" class="form-control" name="_search-catalog" placeholder="Всё для стройки, ремонта, производства">
+        </div>
+        </div>
+        <div class="d-flex flex-column mob-menu__list-row">
+          <ul class="d-flex flex-column mob-menu__list p-0">
+            <li>
+              <div class="d-flex flex-column link-drop mob-menu__link mob-menu__link-drop">
+                <div class="d-flex align-items-center justify-content-between gap-3 link-drop__head">
+                  <span>Ручной инструмент</span>
+                  <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.0193 -4.81668e-07L12 0.892352L6.65505 5.75277C6.56941 5.83112 6.46756 5.8933 6.35538 5.93573C6.2432 5.97816 6.12289 6 6.00139 6C5.87988 6 5.75958 5.97816 5.6474 5.93573C5.53521 5.8933 5.43337 5.83112 5.34773 5.75277L-2.23262e-07 0.892353L0.980725 0.000840621L6 4.56269L11.0193 -4.81668e-07Z" fill="#A0A0A0"/>
+                  </svg>
+                </div>
+                <ul class="d-flex flex-column gap-3 mob-menu__list">
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="d-flex flex-column link-drop mob-menu__link mob-menu__link-drop">
+                <div class="d-flex align-items-center justify-content-between gap-3 link-drop__head">
+                  <span>Пневмоинструмент</span>
+                  <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.0193 -4.81668e-07L12 0.892352L6.65505 5.75277C6.56941 5.83112 6.46756 5.8933 6.35538 5.93573C6.2432 5.97816 6.12289 6 6.00139 6C5.87988 6 5.75958 5.97816 5.6474 5.93573C5.53521 5.8933 5.43337 5.83112 5.34773 5.75277L-2.23262e-07 0.892353L0.980725 0.000840621L6 4.56269L11.0193 -4.81668e-07Z" fill="#A0A0A0"/>
+                  </svg>
+                </div>
+                <ul class="d-flex flex-column gap-3 mob-menu__list">
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="d-flex flex-column link-drop mob-menu__link mob-menu__link-drop">
+                <div class="d-flex align-items-center justify-content-between gap-3 link-drop__head">
+                  <span>Аккумуляторный инструмент</span>
+                  <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.0193 -4.81668e-07L12 0.892352L6.65505 5.75277C6.56941 5.83112 6.46756 5.8933 6.35538 5.93573C6.2432 5.97816 6.12289 6 6.00139 6C5.87988 6 5.75958 5.97816 5.6474 5.93573C5.53521 5.8933 5.43337 5.83112 5.34773 5.75277L-2.23262e-07 0.892353L0.980725 0.000840621L6 4.56269L11.0193 -4.81668e-07Z" fill="#A0A0A0"/>
+                  </svg>
+                </div>
+                <ul class="d-flex flex-column gap-3 mob-menu__list">
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="d-flex flex-column link-drop mob-menu__link mob-menu__link-drop">
+                <div class="d-flex align-items-center justify-content-between gap-3 link-drop__head">
+                  <span>Динамометрический инструмент</span>
+                  <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.0193 -4.81668e-07L12 0.892352L6.65505 5.75277C6.56941 5.83112 6.46756 5.8933 6.35538 5.93573C6.2432 5.97816 6.12289 6 6.00139 6C5.87988 6 5.75958 5.97816 5.6474 5.93573C5.53521 5.8933 5.43337 5.83112 5.34773 5.75277L-2.23262e-07 0.892353L0.980725 0.000840621L6 4.56269L11.0193 -4.81668e-07Z" fill="#A0A0A0"/>
+                  </svg>
+                </div>
+                <ul class="d-flex flex-column gap-3 mob-menu__list">
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="d-flex flex-column link-drop mob-menu__link mob-menu__link-drop">
+                <div class="d-flex align-items-center justify-content-between gap-3 link-drop__head">
+                  <span>Оборудование для СТО</span>
+                  <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.0193 -4.81668e-07L12 0.892352L6.65505 5.75277C6.56941 5.83112 6.46756 5.8933 6.35538 5.93573C6.2432 5.97816 6.12289 6 6.00139 6C5.87988 6 5.75958 5.97816 5.6474 5.93573C5.53521 5.8933 5.43337 5.83112 5.34773 5.75277L-2.23262e-07 0.892353L0.980725 0.000840621L6 4.56269L11.0193 -4.81668e-07Z" fill="#A0A0A0"/>
+                  </svg>
+                </div>
+                <ul class="d-flex flex-column gap-3 mob-menu__list">
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="d-flex flex-column link-drop mob-menu__link mob-menu__link-drop">
+                <div class="d-flex align-items-center justify-content-between gap-3 link-drop__head">
+                  <span>Наборы инструментов</span>
+                  <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.0193 -4.81668e-07L12 0.892352L6.65505 5.75277C6.56941 5.83112 6.46756 5.8933 6.35538 5.93573C6.2432 5.97816 6.12289 6 6.00139 6C5.87988 6 5.75958 5.97816 5.6474 5.93573C5.53521 5.8933 5.43337 5.83112 5.34773 5.75277L-2.23262e-07 0.892353L0.980725 0.000840621L6 4.56269L11.0193 -4.81668e-07Z" fill="#A0A0A0"/>
+                  </svg>
+                </div>
+                <ul class="d-flex flex-column gap-3 mob-menu__list">
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="d-flex flex-column link-drop mob-menu__link mob-menu__link-drop">
+                <div class="d-flex align-items-center justify-content-between gap-3 link-drop__head">
+                  <span>Режущий инструмент</span>
+                  <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.0193 -4.81668e-07L12 0.892352L6.65505 5.75277C6.56941 5.83112 6.46756 5.8933 6.35538 5.93573C6.2432 5.97816 6.12289 6 6.00139 6C5.87988 6 5.75958 5.97816 5.6474 5.93573C5.53521 5.8933 5.43337 5.83112 5.34773 5.75277L-2.23262e-07 0.892353L0.980725 0.000840621L6 4.56269L11.0193 -4.81668e-07Z" fill="#A0A0A0"/>
+                  </svg>
+                </div>
+                <ul class="d-flex flex-column gap-3 mob-menu__list">
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="d-flex flex-column link-drop mob-menu__link mob-menu__link-drop">
+                <div class="d-flex align-items-center justify-content-between gap-3 link-drop__head">
+                  <span>Расходные материалы</span>
+                  <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.0193 -4.81668e-07L12 0.892352L6.65505 5.75277C6.56941 5.83112 6.46756 5.8933 6.35538 5.93573C6.2432 5.97816 6.12289 6 6.00139 6C5.87988 6 5.75958 5.97816 5.6474 5.93573C5.53521 5.8933 5.43337 5.83112 5.34773 5.75277L-2.23262e-07 0.892353L0.980725 0.000840621L6 4.56269L11.0193 -4.81668e-07Z" fill="#A0A0A0"/>
+                  </svg>
+                </div>
+                <ul class="d-flex flex-column gap-3 mob-menu__list">
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="d-flex flex-column link-drop mob-menu__link mob-menu__link-drop">
+                <div class="d-flex align-items-center justify-content-between gap-3 link-drop__head">
+                  <span>Специнструмент для авторемонта</span>
+                  <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.0193 -4.81668e-07L12 0.892352L6.65505 5.75277C6.56941 5.83112 6.46756 5.8933 6.35538 5.93573C6.2432 5.97816 6.12289 6 6.00139 6C5.87988 6 5.75958 5.97816 5.6474 5.93573C5.53521 5.8933 5.43337 5.83112 5.34773 5.75277L-2.23262e-07 0.892353L0.980725 0.000840621L6 4.56269L11.0193 -4.81668e-07Z" fill="#A0A0A0"/>
+                  </svg>
+                </div>
+                <ul class="d-flex flex-column gap-3 mob-menu__list">
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="d-flex flex-column link-drop mob-menu__link mob-menu__link-drop">
+                <div class="d-flex align-items-center justify-content-between gap-3 link-drop__head">
+                  <span>Освещение</span>
+                  <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.0193 -4.81668e-07L12 0.892352L6.65505 5.75277C6.56941 5.83112 6.46756 5.8933 6.35538 5.93573C6.2432 5.97816 6.12289 6 6.00139 6C5.87988 6 5.75958 5.97816 5.6474 5.93573C5.53521 5.8933 5.43337 5.83112 5.34773 5.75277L-2.23262e-07 0.892353L0.980725 0.000840621L6 4.56269L11.0193 -4.81668e-07Z" fill="#A0A0A0"/>
+                  </svg>
+                </div>
+                <ul class="d-flex flex-column gap-3 mob-menu__list">
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                  <li><a href="#" class="mob-menu__link">Cсылка</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+  
+      </div>
+    </div>
+
+  </div>
+
+</header>
+
+
+
+      <main class="page">
+        <div data-observ></div>
+        <div class="crumbs">
+            <div class="d-flex align-items-center container flex-wrap">
+                <a href="#">
+                    Главная
+                </a>
+                <span>/</span>
+                <a href="#">
+                    Сравнение товаров
+                </a>
+                <span>/</span>
+            </div>
+        </div>
+        <div class="compar">
+    <div class="container">
+            <h1 class="compar__title">
+                Сравнение товаров
+            </h1>
+            <div class="compar__head">
+                <div class="d-flex flex-wrap compar__head-row">
+                    <div class="compar__points gray">
+                        <span>Аккумуляторные гайковерты (2)</span>
+                        <div class="close">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 11L1 1M11 1L1 11" stroke="#292929" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="compar__points gray">
+                        <span>Аккумуляторные гайковерты (2)</span>
+                        <div class="close">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 11L1 1M11 1L1 11" stroke="#292929" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="compar__points">
+                        <span>Пневмопистолеты</span>
+                        <div class="fix">
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 12.9998V14.7928C1 14.9254 1.05268 15.0526 1.14645 15.1464C1.24021 15.2401 1.36739 15.2928 1.5 15.2928H3.293C3.42535 15.2928 3.55229 15.2403 3.646 15.1468L12.146 6.64682L9.646 4.14682L1.146 12.6468C1.05253 12.7405 1.00003 12.8675 1 12.9998ZM11.59 2.20282L14.09 4.70282L15.293 3.49982C15.4805 3.31229 15.5858 3.05798 15.5858 2.79282C15.5858 2.52765 15.4805 2.27335 15.293 2.08582L14.207 0.999817C14.0195 0.812346 13.7652 0.707031 13.5 0.707031C13.2348 0.707031 12.9805 0.812346 12.793 0.999817L11.59 2.20282Z" stroke="black"/>
+                            </svg>
+                        </div>
+                        <div class="close">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 11L1 1M11 1L1 11" stroke="#292929" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="compar__points">
+                        <span>Наборы отверток</span>
+                        <div class="fix">
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 12.9998V14.7928C1 14.9254 1.05268 15.0526 1.14645 15.1464C1.24021 15.2401 1.36739 15.2928 1.5 15.2928H3.293C3.42535 15.2928 3.55229 15.2403 3.646 15.1468L12.146 6.64682L9.646 4.14682L1.146 12.6468C1.05253 12.7405 1.00003 12.8675 1 12.9998ZM11.59 2.20282L14.09 4.70282L15.293 3.49982C15.4805 3.31229 15.5858 3.05798 15.5858 2.79282C15.5858 2.52765 15.4805 2.27335 15.293 2.08582L14.207 0.999817C14.0195 0.812346 13.7652 0.707031 13.5 0.707031C13.2348 0.707031 12.9805 0.812346 12.793 0.999817L11.59 2.20282Z" stroke="black"/>
+                            </svg>
+                        </div>
+                        <div class="close">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 11L1 1M11 1L1 11" stroke="#292929" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback__left-bot">
+                    <div class="d-flex flex-column">
+                        <label class="item-radio">
+                            <input checked="checked" type="radio" value="Все характеристикиу" name="connection" class="item-radio__input">
+                            <div class="item-radio__icon"></div>
+                            <span>Все характеристики</span><span class="t-gray">(14)</span>
+                        </label>
+                        <label class="item-radio">
+                            <input type="radio" value="Только различия" name="connection" class="item-radio__input">
+                            <div class="item-radio__icon"></div>
+                            <span>Только различия</span><span class="t-gray">(4)</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="compar__body">
+                <div class="compar__row-card">
+                    <div class="prod-card">
+                            <div class="d-flex flex-column prod-card__content">
+                                <div class="prod-card__top">
+                                    <div class="d-flex align-items-center justify-content-between g-3 prod-card__head">
+                                        <p class="t-gray fw-medium m-0 prod-card__h-text">код: 55372</p>
+                                        <div class="d-flex align-items-center prod-card__i-row">
+                                            <div class="prod-card__h-i prod-card__h-i-like"></div>
+                                            <div class="prod-card__h-i prod-card__h-i-stat"></div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-card__img-box">
+                                        <div id="prodCardSlider1" class="carousel carousel-prod-card slide">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#prodCardSlider1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#prodCardSlider1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#prodCardSlider1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                <button type="button" data-bs-target="#prodCardSlider1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                <button type="button" data-bs-target="#prodCardSlider1" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                            </div>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="d-flex flex-column align-items-start prod-card__body">
+                                    <div class="d-flex align-items-center prod-card__star-box">
+                                        <div class="d-flex prod-card__star-row">
+                                            <div class="prod-card__star orange"></div>
+                                            <div class="prod-card__star orange"></div>
+                                            <div class="prod-card__star orange"></div>
+                                            <div class="prod-card__star orange"></div>
+                                            <div class="prod-card__star"></div>
+                                        </div>
+                                        <p class="t-gray prod-card__star-text">18</p>
+                                    </div>
+                                    <div class="prod-card__text prod-card__title t-elips-3">OMP11212 Гайковерт пневматический ударный 1/2"DR, 7000 об/мин., 1200 Нм</div>
+                                    <p class="prod-card__text fw-bold t-green">В наличии > 50 шт.</p>
+                                    <p class="prod-card__text">
+                                        <span class="t-gray">Артикул:</span> OMP11212
+                                    </p>
+                                    <div class="d-flex align-items-end prod-card__price">
+                                        <p class="prod-card__text fw-medium t-gray text-decoration-line-through">31 240₽</p>
+                                        <p class="prod-card__text fw-bold big t-orange">18 340₽ </p>
+                                    </div>
+                                    <button type="button" class="btn btn-primary prod-card__btn">В корзину</button>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="prod-card">
+                            <div class="d-flex flex-column prod-card__content">
+                                <div class="prod-card__top">
+                                    <div class="d-flex align-items-center justify-content-between g-3 prod-card__head">
+                                        <p class="t-gray fw-medium m-0 prod-card__h-text">код: 55372</p>
+                                        <div class="d-flex align-items-center prod-card__i-row">
+                                            <div class="prod-card__h-i prod-card__h-i-like"></div>
+                                            <div class="prod-card__h-i prod-card__h-i-stat"></div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-card__img-box">
+                                        <div id="prodCardSlider2" class="carousel carousel-prod-card slide">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#prodCardSlider2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#prodCardSlider2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#prodCardSlider2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                <button type="button" data-bs-target="#prodCardSlider2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                <button type="button" data-bs-target="#prodCardSlider2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                            </div>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="d-flex flex-column align-items-start prod-card__body">
+                                    <div class="d-flex align-items-center prod-card__star-box">
+                                        <div class="d-flex prod-card__star-row">
+                                            <div class="prod-card__star orange"></div>
+                                            <div class="prod-card__star orange"></div>
+                                            <div class="prod-card__star orange"></div>
+                                            <div class="prod-card__star orange"></div>
+                                            <div class="prod-card__star"></div>
+                                        </div>
+                                        <p class="t-gray prod-card__star-text">18</p>
+                                    </div>
+                                    <div class="prod-card__text prod-card__title t-elips-3">OMP11212 Гайковерт пневматический ударный 1/2"DR, 7000 об/мин., 1200 Нм</div>
+                                    <p class="prod-card__text fw-bold t-green">В наличии > 50 шт.</p>
+                                    <p class="prod-card__text">
+                                        <span class="t-gray">Артикул:</span> OMP11212
+                                    </p>
+                                    <div class="d-flex align-items-end prod-card__price">
+                                        <p class="prod-card__text fw-medium t-gray text-decoration-line-through">31 240₽</p>
+                                        <p class="prod-card__text fw-bold big t-orange">18 340₽ </p>
+                                    </div>
+                                    <button type="button" class="btn btn-primary prod-card__btn">В корзину</button>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="prod-card">
+                            <div class="d-flex flex-column prod-card__content">
+                                <div class="prod-card__top">
+                                    <div class="d-flex align-items-center justify-content-between g-3 prod-card__head">
+                                        <p class="t-gray fw-medium m-0 prod-card__h-text">код: 55372</p>
+                                        <div class="d-flex align-items-center prod-card__i-row">
+                                            <div class="prod-card__h-i prod-card__h-i-like"></div>
+                                            <div class="prod-card__h-i prod-card__h-i-stat"></div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-card__img-box">
+                                        <div id="prodCardSlider3" class="carousel carousel-prod-card slide">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#prodCardSlider3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#prodCardSlider3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#prodCardSlider3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                <button type="button" data-bs-target="#prodCardSlider3" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                <button type="button" data-bs-target="#prodCardSlider3" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                            </div>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="d-flex flex-column align-items-start prod-card__body">
+                                    <div class="d-flex align-items-center prod-card__star-box">
+                                        <div class="d-flex prod-card__star-row">
+                                            <div class="prod-card__star orange"></div>
+                                            <div class="prod-card__star orange"></div>
+                                            <div class="prod-card__star orange"></div>
+                                            <div class="prod-card__star orange"></div>
+                                            <div class="prod-card__star"></div>
+                                        </div>
+                                        <p class="t-gray prod-card__star-text">18</p>
+                                    </div>
+                                    <div class="prod-card__text prod-card__title t-elips-3">OMP11212 Гайковерт пневматический ударный 1/2"DR, 7000 об/мин., 1200 Нм</div>
+                                    <p class="prod-card__text fw-bold t-green">В наличии > 50 шт.</p>
+                                    <p class="prod-card__text">
+                                        <span class="t-gray">Артикул:</span> OMP11212
+                                    </p>
+                                    <div class="d-flex align-items-end prod-card__price">
+                                        <p class="prod-card__text fw-medium t-gray text-decoration-line-through">31 240₽</p>
+                                        <p class="prod-card__text fw-bold big t-orange">18 340₽ </p>
+                                    </div>
+                                    <button type="button" class="btn btn-primary prod-card__btn">В корзину</button>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="prod-card">
+                            <div class="d-flex flex-column prod-card__content">
+                                <div class="prod-card__top">
+                                    <div class="d-flex align-items-center justify-content-between g-3 prod-card__head">
+                                        <p class="t-gray fw-medium m-0 prod-card__h-text">код: 55372</p>
+                                        <div class="d-flex align-items-center prod-card__i-row">
+                                            <div class="prod-card__h-i prod-card__h-i-like"></div>
+                                            <div class="prod-card__h-i prod-card__h-i-stat"></div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-card__img-box">
+                                        <div id="prodCardSlider4" class="carousel carousel-prod-card slide">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#prodCardSlider4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#prodCardSlider4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#prodCardSlider4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                <button type="button" data-bs-target="#prodCardSlider4" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                <button type="button" data-bs-target="#prodCardSlider4" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                            </div>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="d-flex flex-column align-items-start prod-card__body">
+                                    <div class="d-flex align-items-center prod-card__star-box">
+                                        <div class="d-flex prod-card__star-row">
+                                            <div class="prod-card__star orange"></div>
+                                            <div class="prod-card__star orange"></div>
+                                            <div class="prod-card__star orange"></div>
+                                            <div class="prod-card__star orange"></div>
+                                            <div class="prod-card__star"></div>
+                                        </div>
+                                        <p class="t-gray prod-card__star-text">18</p>
+                                    </div>
+                                    <div class="prod-card__text prod-card__title t-elips-3">OMP11212 Гайковерт пневматический ударный 1/2"DR, 7000 об/мин., 1200 Нм</div>
+                                    <p class="prod-card__text fw-bold t-green">В наличии > 50 шт.</p>
+                                    <p class="prod-card__text">
+                                        <span class="t-gray">Артикул:</span> OMP11212
+                                    </p>
+                                    <div class="d-flex align-items-end prod-card__price">
+                                        <p class="prod-card__text fw-medium t-gray text-decoration-line-through">31 240₽</p>
+                                        <p class="prod-card__text fw-bold big t-orange">18 340₽ </p>
+                                    </div>
+                                    <button type="button" class="btn btn-primary prod-card__btn">В корзину</button>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="prod-card">
+                        <div class="d-flex flex-column prod-card__content">
+                            <div class="prod-card__top">
+                                <div class="d-flex align-items-center justify-content-between g-3 prod-card__head">
+                                    <p class="t-gray fw-medium m-0 prod-card__h-text">код: 55372</p>
+                                    <div class="d-flex align-items-center prod-card__i-row">
+                                        <div class="prod-card__h-i prod-card__h-i-like"></div>
+                                        <div class="prod-card__h-i prod-card__h-i-stat"></div>
+                                    </div>
+                                </div>
+                                <div class="prod-card__img-box">
+                                    <div id="prodCardSlider3" class="carousel carousel-prod-card slide">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#prodCardSlider3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#prodCardSlider3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#prodCardSlider3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#prodCardSlider3" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                            <button type="button" data-bs-target="#prodCardSlider3" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="d-flex flex-column align-items-start prod-card__body">
+                                <div class="d-flex align-items-center prod-card__star-box">
+                                    <div class="d-flex prod-card__star-row">
+                                        <div class="prod-card__star orange"></div>
+                                        <div class="prod-card__star orange"></div>
+                                        <div class="prod-card__star orange"></div>
+                                        <div class="prod-card__star orange"></div>
+                                        <div class="prod-card__star"></div>
+                                    </div>
+                                    <p class="t-gray prod-card__star-text">18</p>
+                                </div>
+                                <div class="prod-card__text prod-card__title t-elips-3">OMP11212 Гайковерт пневматический ударный 1/2"DR, 7000 об/мин., 1200 Нм</div>
+                                <p class="prod-card__text fw-bold t-green">В наличии > 50 шт.</p>
+                                <p class="prod-card__text">
+                                    <span class="t-gray">Артикул:</span> OMP11212
+                                </p>
+                                <div class="d-flex align-items-end prod-card__price">
+                                    <p class="prod-card__text fw-medium t-gray text-decoration-line-through">31 240₽</p>
+                                    <p class="prod-card__text fw-bold big t-orange">18 340₽ </p>
+                                </div>
+                                <button type="button" class="btn btn-primary prod-card__btn">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column compar__descript">
+                    <div class="d-flex flex-column compar__descript-row">
+                        <div class="compar__item-row title-row">
+                            <div class="compar__item fw-bold title">
+                                Наличие на складе
+                            </div>
+                        </div>
+                        <div class="compar__item-row">
+                            <div class="compar__item">
+                                
+                            </div>
+                            <div class="compar__item">
+                                В наличии, мало
+                            </div>
+                            <div class="compar__item">
+                                В наличии, мало
+                            </div>
+                            <div class="compar__item">
+                                В наличии, мало
+                            </div>
+                            <div class="compar__item">
+                                В наличии, мало
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column compar__descript-row">
+                        <div class="compar__item-row title-row">
+                            <div class="compar__item fw-bold title">
+                                Тех. характеристики
+                            </div>
+                        </div>
+                        <div class="compar__item-row">
+                            <div class="compar__item">
+                                Количество оборотов, об/мин
+                            </div>
+                            <div class="compar__item">
+                                2400/1800/1200
+                            </div>
+                            <div class="compar__item">
+                                2400/1800/1200
+                            </div>
+                            <div class="compar__item">
+                                2400/1800/1200
+                            </div>
+                            <div class="compar__item">
+                                2400/1800/1200
+                            </div>
+                        </div>
+                        <div class="compar__item-row">
+                            <div class="compar__item">
+                                Количество ударов, уд/мин
+                            </div>
+                            <div class="compar__item">
+                                2000/1500/1000
+                            </div>
+                            <div class="compar__item">
+                                2000/1500/1000
+                            </div>
+                            <div class="compar__item">
+                                2000/1500/1000
+                            </div>
+                            <div class="compar__item">
+                                2000/1500/1000
+                            </div>
+                        </div>
+                        <div class="compar__item-row">
+                            <div class="compar__item">
+                                Крутящий момент, рабочий, Нм
+                            </div>
+                            <div class="compar__item">
+                                650/450/300
+                            </div>
+                            <div class="compar__item">
+                                650/450/300
+                            </div>
+                            <div class="compar__item">
+                                650/450/300
+                            </div>
+                            <div class="compar__item">
+                                650/450/300
+                            </div>
+                        </div>
+                        <div class="compar__item-row">
+                            <div class="compar__item">
+                                Крутящий момент, максимальный, Нм
+                            </div>
+                            <div class="compar__item">
+                                890
+                            </div>
+                            <div class="compar__item">
+                                890
+                            </div>
+                            <div class="compar__item">
+                                890
+                            </div>
+                            <div class="compar__item">
+                                890
+                            </div>
+                        </div>
+                        <div class="compar__item-row">
+                            <div class="compar__item">
+                                Напряжение аккумулятора
+                            </div>
+                            <div class="compar__item">
+                                21V
+                            </div>
+                            <div class="compar__item">
+                                21V
+                            </div>
+                            <div class="compar__item">
+                                21V
+                            </div>
+                            <div class="compar__item">
+                                21V
+                            </div>
+                        </div>
+                        <div class="compar__item-row">
+                            <div class="compar__item">
+                                Емкость аккумулятора
+                            </div>
+                            <div class="compar__item">
+                                4Ач
+                            </div>
+                            <div class="compar__item">
+                                4Ач
+                            </div>
+                            <div class="compar__item">
+                                4Ач
+                            </div>
+                            <div class="compar__item">
+                                4Ач
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column compar__descript-row">
+                        <div class="compar__item-row title-row">
+                            <div class="compar__item fw-bold title">
+                                Состав товара
+                            </div>
+                        </div>
+                        <div class="compar__item-row">
+                            <div class="compar__item">
+                                
+                            </div>
+                            <div class="compar__item">
+                                Гайковерт аккумуляторный
+                            </div>
+                            <div class="compar__item">
+                                Гайковерт аккумуляторный
+                            </div>
+                            <div class="compar__item">
+                                Гайковерт аккумуляторный
+                            </div>
+                            <div class="compar__item">
+                                Гайковерт аккумуляторный
+                            </div>
+                        </div>
+                        <div class="compar__item-row">
+                            <div class="compar__item">
+                                
+                            </div>
+                            <div class="compar__item">
+                                Батарея, аккумуляторная
+                            </div>
+                            <div class="compar__item">
+                                Батарея, аккумуляторная
+                            </div>
+                            <div class="compar__item">
+                                Батарея, аккумуляторная
+                            </div>
+                            <div class="compar__item">
+                                Батарея, аккумуляторная
+                            </div>
+                        </div>
+                        <div class="compar__item-row">
+                            <div class="compar__item">
+                                
+                            </div>
+                            <div class="compar__item">
+                                21V/4Ач - 2 шт.
+                            </div>
+                            <div class="compar__item">
+                                21V/4Ач - 2 шт.
+                            </div>
+                            <div class="compar__item">
+                                21V/4Ач - 2 шт.
+                            </div>
+                            <div class="compar__item">
+                                21V/4Ач - 2 шт.
+                            </div>
+                        </div>
+                        <div class="compar__item-row">
+                            <div class="compar__item">
+                                
+                            </div>
+                            <div class="compar__item">
+                                Зарядное устройство
+                            </div>
+                            <div class="compar__item">
+                                Зарядное устройство
+                            </div>
+                            <div class="compar__item">
+                                Зарядное устройство
+                            </div>
+                            <div class="compar__item">
+                                Зарядное устройство
+                            </div>
+                        </div>
+                        <div class="compar__item-row">
+                            <div class="compar__item">
+                                
+                            </div>
+                            <div class="compar__item">
+                                Пластиковый кейс
+                            </div>
+                            <div class="compar__item">
+                                Пластиковый кейс
+                            </div>
+                            <div class="compar__item">
+                                Пластиковый кейс
+                            </div>
+                            <div class="compar__item">
+                                Пластиковый кейс
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column prod-cat__row">
+                <div class="prod-cat__item">
+                    <div class="prod-cat__title t-two">
+                        Сравните с аналогами
+                    </div>
+                    <div class="gx-3 gx-md-6 gy-3 row">
+                        <div class="prod-card col-6 col-lg-3">
+                            <div class="d-flex flex-column prod-card__content">
+                                <div class="prod-card__top">
+                                    <div class="d-flex align-items-center justify-content-between g-3 prod-card__head">
+                                        <p class="t-gray fw-medium m-0 prod-card__h-text">код: 55372</p>
+                                        <div class="d-flex align-items-center prod-card__i-row">
+                                            <div class="prod-card__h-i prod-card__h-i-like"></div>
+                                            <div class="prod-card__h-i prod-card__h-i-stat"></div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-card__img-box">
+                                        <div id="prodCardSlider1" class="carousel carousel-prod-card slide">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#prodCardSlider1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#prodCardSlider1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#prodCardSlider1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                <button type="button" data-bs-target="#prodCardSlider1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                <button type="button" data-bs-target="#prodCardSlider1" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                            </div>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="d-flex flex-column align-items-start prod-card__body">
+                                    <div class="d-flex align-items-center prod-card__star-box">
+                                        <div class="d-flex prod-card__star-row">
+                                            <div class="prod-card__star orange"></div>
+                                            <div class="prod-card__star orange"></div>
+                                            <div class="prod-card__star orange"></div>
+                                            <div class="prod-card__star orange"></div>
+                                            <div class="prod-card__star"></div>
+                                        </div>
+                                        <p class="t-gray prod-card__star-text">18</p>
+                                    </div>
+                                    <div class="prod-card__text prod-card__title t-elips-3">OMP11212 Гайковерт пневматический ударный 1/2"DR, 7000 об/мин., 1200 Нм</div>
+                                    <p class="prod-card__text fw-bold t-green">В наличии > 50 шт.</p>
+                                    <p class="prod-card__text">
+                                        <span class="t-gray">Артикул:</span> OMP11212
+                                    </p>
+                                    <div class="d-flex align-items-end prod-card__price">
+                                        <p class="prod-card__text fw-medium t-gray text-decoration-line-through">31 240₽</p>
+                                        <p class="prod-card__text fw-bold big t-orange">18 340₽ </p>
+                                    </div>
+                                    <button type="button" class="btn btn-primary prod-card__btn">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prod-card col-6 col-lg-3">
+                            <div class="d-flex flex-column prod-card__content">
+                                <div class="prod-card__top">
+                                    <div class="d-flex align-items-center justify-content-between g-3 prod-card__head">
+                                        <p class="t-gray fw-medium m-0 prod-card__h-text">код: 55372</p>
+                                        <div class="d-flex align-items-center prod-card__i-row">
+                                            <div class="prod-card__h-i prod-card__h-i-like"></div>
+                                            <div class="prod-card__h-i prod-card__h-i-stat"></div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-card__img-box">
+                                        <div id="prodCardSlider2" class="carousel carousel-prod-card slide">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#prodCardSlider2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#prodCardSlider2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#prodCardSlider2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                <button type="button" data-bs-target="#prodCardSlider2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                <button type="button" data-bs-target="#prodCardSlider2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                            </div>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="d-flex flex-column align-items-start prod-card__body">
+                                    <div class="d-flex align-items-center prod-card__star-box">
+                                        <div class="d-flex prod-card__star-row">
+                                            <div class="prod-card__star orange"></div>
+                                            <div class="prod-card__star orange"></div>
+                                            <div class="prod-card__star orange"></div>
+                                            <div class="prod-card__star orange"></div>
+                                            <div class="prod-card__star"></div>
+                                        </div>
+                                        <p class="t-gray prod-card__star-text">18</p>
+                                    </div>
+                                    <div class="prod-card__text prod-card__title t-elips-3">OMP11212 Гайковерт пневматический ударный 1/2"DR, 7000 об/мин., 1200 Нм</div>
+                                    <p class="prod-card__text fw-bold t-green">В наличии > 50 шт.</p>
+                                    <p class="prod-card__text">
+                                        <span class="t-gray">Артикул:</span> OMP11212
+                                    </p>
+                                    <div class="d-flex align-items-end prod-card__price">
+                                        <p class="prod-card__text fw-medium t-gray text-decoration-line-through">31 240₽</p>
+                                        <p class="prod-card__text fw-bold big t-orange">18 340₽ </p>
+                                    </div>
+                                    <button type="button" class="btn btn-primary prod-card__btn">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prod-card col-6 col-lg-3">
+                            <div class="d-flex flex-column prod-card__content">
+                                <div class="prod-card__top">
+                                    <div class="d-flex align-items-center justify-content-between g-3 prod-card__head">
+                                        <p class="t-gray fw-medium m-0 prod-card__h-text">код: 55372</p>
+                                        <div class="d-flex align-items-center prod-card__i-row">
+                                            <div class="prod-card__h-i prod-card__h-i-like"></div>
+                                            <div class="prod-card__h-i prod-card__h-i-stat"></div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-card__img-box">
+                                        <div id="prodCardSlider3" class="carousel carousel-prod-card slide">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#prodCardSlider3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#prodCardSlider3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#prodCardSlider3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                <button type="button" data-bs-target="#prodCardSlider3" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                <button type="button" data-bs-target="#prodCardSlider3" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                            </div>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="d-flex flex-column align-items-start prod-card__body">
+                                    <div class="d-flex align-items-center prod-card__star-box">
+                                        <div class="d-flex prod-card__star-row">
+                                            <div class="prod-card__star orange"></div>
+                                            <div class="prod-card__star orange"></div>
+                                            <div class="prod-card__star orange"></div>
+                                            <div class="prod-card__star orange"></div>
+                                            <div class="prod-card__star"></div>
+                                        </div>
+                                        <p class="t-gray prod-card__star-text">18</p>
+                                    </div>
+                                    <div class="prod-card__text prod-card__title t-elips-3">OMP11212 Гайковерт пневматический ударный 1/2"DR, 7000 об/мин., 1200 Нм</div>
+                                    <p class="prod-card__text fw-bold t-green">В наличии > 50 шт.</p>
+                                    <p class="prod-card__text">
+                                        <span class="t-gray">Артикул:</span> OMP11212
+                                    </p>
+                                    <div class="d-flex align-items-end prod-card__price">
+                                        <p class="prod-card__text fw-medium t-gray text-decoration-line-through">31 240₽</p>
+                                        <p class="prod-card__text fw-bold big t-orange">18 340₽ </p>
+                                    </div>
+                                    <button type="button" class="btn btn-primary prod-card__btn">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prod-card col-6 col-lg-3">
+                            <div class="d-flex flex-column prod-card__content">
+                                <div class="prod-card__top">
+                                    <div class="d-flex align-items-center justify-content-between g-3 prod-card__head">
+                                        <p class="t-gray fw-medium m-0 prod-card__h-text">код: 55372</p>
+                                        <div class="d-flex align-items-center prod-card__i-row">
+                                            <div class="prod-card__h-i prod-card__h-i-like"></div>
+                                            <div class="prod-card__h-i prod-card__h-i-stat"></div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-card__img-box">
+                                        <div id="prodCardSlider4" class="carousel carousel-prod-card slide">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#prodCardSlider4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#prodCardSlider4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#prodCardSlider4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                <button type="button" data-bs-target="#prodCardSlider4" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                <button type="button" data-bs-target="#prodCardSlider4" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                            </div>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture><source srcset="images/cat-img.webp" type="image/webp"><img src="images/cat-img.png" class="d-block h-100 m-auto w-auto" alt="..."></picture>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="d-flex flex-column align-items-start prod-card__body">
+                                    <div class="d-flex align-items-center prod-card__star-box">
+                                        <div class="d-flex prod-card__star-row">
+                                            <div class="prod-card__star orange"></div>
+                                            <div class="prod-card__star orange"></div>
+                                            <div class="prod-card__star orange"></div>
+                                            <div class="prod-card__star orange"></div>
+                                            <div class="prod-card__star"></div>
+                                        </div>
+                                        <p class="t-gray prod-card__star-text">18</p>
+                                    </div>
+                                    <div class="prod-card__text prod-card__title t-elips-3">OMP11212 Гайковерт пневматический ударный 1/2"DR, 7000 об/мин., 1200 Нм</div>
+                                    <p class="prod-card__text fw-bold t-green">В наличии > 50 шт.</p>
+                                    <p class="prod-card__text">
+                                        <span class="t-gray">Артикул:</span> OMP11212
+                                    </p>
+                                    <div class="d-flex align-items-end prod-card__price">
+                                        <p class="prod-card__text fw-medium t-gray text-decoration-line-through">31 240₽</p>
+                                        <p class="prod-card__text fw-bold big t-orange">18 340₽ </p>
+                                    </div>
+                                    <button type="button" class="btn btn-primary prod-card__btn">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+</div>
+        
+
+
+      </main>
+
+      <footer class="footer">
+  <div class="container">
+    <div class="d-flex flex-column gap-5 flex-md-row footer__row justify-content-between">
+      <div class="d-flex flex-column gap-5 order-0">
+        <div class="d-flex flex-column gap-5">
+          <div class="d-flex flex-column gap-3">
+            <a href="tel:+79999999999" class="bs-link fs-4 font-2">+7 999 999 99 99</a>
+            <p>Москва</p>
+          </div>
+          <div class="d-flex flex-column gap-3">
+            <a href="tel:+79999999999" class="bs-link fs-4 font-2">+7 999 999 99 99</a>
+            <p>Россия</p>
+          </div>
+        </div>
+        <div class="d-flex flex-column gap-3 mt-2">
+          <a href="mailto:pride@pride.ru" class="fw-bold bs-link fs-4">pride@pride.ru</a>
+          <p>
+            Пн – Вс
+            <br>09:00 – 22:00
+          </p>
+        </div>
+        <div class="footer__info">
+          <p>ООО «Торговый Дом ПРАЙД»</p>
+          <p>Почтовый адрес: 125438, г. Москва, ул. Автомоторная, д.8</p>
+          <p>ИНН 7743139407</p>
+          <p>КПП 774301001</p>
+          <p>ОГРН 1167746148393</p>
+        </div>
+        <p>© Прайд, 2002-2025</p>
+      </div>
+      <div class="d-flex flex-column gap-5 order-2 order-md-1">
+        <div class="d-flex justify-content-between gap-5 flex-md-column justify-content-sm-start">
+          <div class="d-flex flex-column gap-3">
+            <a href="#" class="bs-link">Личный кабинет</a>
+            <a href="#" class="bs-link">Каталог</a>
+            <a href="#" class="bs-link">Где купить?</a>
+            <a href="#" class="bs-link">Контакты</a>
+          </div>
+          <div class="d-flex flex-column gap-3">
+            <a href="#" class="bs-link">Доставка и оплата</a>
+            <a href="#" class="bs-link">Обмен и возврат</a>
+            <a href="#" class="bs-link">Гарантия</a>
+          </div>
+        </div>
+        <div class="d-flex flex-column gap-2 mt-auto">
+          <a href="#" class="link-min">Политика конфиденциальности</a>
+          <a href="#" class="link-min">Пользовательское соглашение</a>
+        </div>
+      </div>
+      <div class="d-flex flex-column gap-3 order-1 order-md-1">
+        <p class="font-2 fw-medium">Офис</p>
+        <a href="#" class="bs-link">ул. Автомоторная, д.8</a>
+        <a href="mailto:moscow@pride.ru" class="bs-link">moscow@pride.ru</a>
+        <a href="tel:+79999999999" class="bs-link">+7 999 999 99 99</a>
+        <p>
+          Пн – Вс
+          <br>09:00 – 22:00
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+    </div>
+
+    
+<div class="" data-bs-toggle="modal" data-bs-target="#loginOrRegistrationModal">открыть 1</div>
+<div class="" data-bs-toggle="modal" data-bs-target="#registrationModalOne">открыть 2</div>
+<div class="" data-bs-toggle="modal" data-bs-target="#registrationModalTwo">открыть 3</div>
+<div class="" data-bs-toggle="modal" data-bs-target="#registrationModalCode">открыть 4</div>
+<div class="" data-bs-toggle="modal" data-bs-target="#registrationModalPassword">открыть 5</div>
+<div class="" data-bs-toggle="modal" data-bs-target="#registrationModalIp">открыть 6</div>
+
+
+<div class="fade modal" id="loginOrRegistrationModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <form action="#" class="d-flex flex-column modal-content">
+            <div class="d-flex flex-column modal-box modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                <div class="fw-bold modal-title" id="modalVerticallyCenteredLabel">Вход или регистрация</div>
+            </div>
+            <div class="d-flex flex-column modal-box modal-body">
+                <div class="form-control-item">
+                    <input type="email" class="form-control" name="_email" placeholder="E-mail">
+                </div>
+
+            </div>
+            <div class="d-flex flex-column modal-box modal-footer">
+
+
+                <button type="button" class="btn btn-primary modal-btn two">Продолжить</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="fade modal" id="registrationModalOne" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <form action="#" class="d-flex flex-column modal-content">
+            <div class="d-flex flex-column modal-box modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                <button type="button" class="modal-btn-back">←</button>
+                <div class="fw-bold modal-title" id="modalVerticallyCenteredLabel">Регистрация</div>
+            </div>
+            <div class="d-flex flex-column modal-box modal-body">
+                <div class="form-control-item">
+                    <input type="text" class="form-control" name="_inn" placeholder="ИНН организации">
+                </div>
+            </div>
+            <div class="modal-box">
+                <div class="d-flex flex-column modal-info">
+                    <p class="fw-bold big">ип тест22</p>
+                    <p>ИНН 99999999999</p>
+                    <p>г. Москва</p>
+                </div>
+            </div>
+            <div class="d-flex flex-column modal-box modal-footer">
+                <button type="button" class="btn btn-primary modal-btn two">Продолжить</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="fade modal" id="registrationModalTwo" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <form action="#" class="d-flex flex-column modal-content">
+            <div class="d-flex flex-column modal-box modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                <button type="button" class="modal-btn-back">←</button>
+                <div class="fw-bold modal-title" id="modalVerticallyCenteredLabel">Регистрация</div>
+            </div>
+            <div class="d-flex flex-column modal-box modal-body">
+                <div class="form-control-item">
+                    <input type="text" class="form-control" name="_name" placeholder="Имя, фамилия">
+                </div>
+                <div class="form-control-item">
+                    <input type="tel" class="form-control" name="_phone" placeholder="Телефон">
+                </div>
+                <div class="form-control-item">
+                    <input type="email" class="form-control" name="_email" placeholder="E-mail">
+                </div>
+                <div class="form-control-item">
+                    <input type="password" class="form-control" name="_password" placeholder="Пароль">
+                </div>
+                <div class="form-control-item">
+                    <label class="form-check">
+                        <input class="form-check-input" name="manufacturer" type="checkbox" value="Jonnesway">
+                        <div class="form-check-icon"></div>
+                        <span class="form-check-text">
+                            <span>Получать информацию о новинках и специальных предложениях</span>
+                        </span>
+                    </label>
+                </div>
+            </div>
+            <div class="d-flex flex-column modal-box modal-footer">
+                <button type="button" class="btn btn-primary modal-btn two">Продолжить</button>
+                <div class="modal-text">
+                    Регистрируясь, я даю согласие на обработку персональных данных в соответствии
+                    с <a href="#">политикой конфиденциальности</a> pride.ru
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="fade modal" id="registrationModalCode" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <form action="#" class="d-flex flex-column modal-content">
+            <div class="d-flex flex-column modal-box modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                <div class="fw-bold modal-title" id="modalVerticallyCenteredLabel">Введите код</div>
+            </div>
+            <div class="d-flex flex-column modal-box modal-body">
+                <div class="form-control-item">
+                    <input type="text" class="form-control" name="_code" placeholder="Код из письма">
+                </div>
+                <div class="d-flex flex-column align-items-center modal-body-box modal-text">
+                    <p class="text-center">Код отправлен на test@gmail.com
+                    <br>Получить новый код можно через 00:57</p>
+                    <a class="text-center" href="#">Войти с паролем</a>
+                </div>
+            </div>
+   
+            <div class="d-flex flex-column modal-box modal-footer">
+                <button type="button" class="btn btn-primary modal-btn two">Получить новый код</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="fade modal" id="registrationModalPassword" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <form action="#" class="d-flex flex-column modal-content">
+            <div class="d-flex flex-column modal-box modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                <button type="button" class="modal-btn-back">←</button>
+                <div class="fw-bold modal-title" id="modalVerticallyCenteredLabel">Введите код</div>
+            </div>
+            <div class="d-flex flex-column modal-box modal-body">
+                <div class="form-control-item input-password-item">
+                    <input type="password" class="form-control input-password" name="_password" placeholder="Пароль">
+                    <div class="input-password-show">
+                        <svg width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.7335 4.2C9.99086 4.2 9.27867 4.495 8.75356 5.0201C8.22846 5.5452 7.93346 6.25739 7.93346 7C7.93346 7.74261 8.22846 8.4548 8.75356 8.9799C9.27867 9.505 9.99086 9.8 10.7335 9.8C11.4761 9.8 12.1883 9.505 12.7134 8.9799C13.2385 8.4548 13.5335 7.74261 13.5335 7C13.5335 6.25739 13.2385 5.5452 12.7134 5.0201C12.1883 4.495 11.4761 4.2 10.7335 4.2ZM10.7335 11.6667C9.49579 11.6667 8.3088 11.175 7.43363 10.2998C6.55846 9.42466 6.0668 8.23768 6.0668 7C6.0668 5.76232 6.55846 4.57534 7.43363 3.70017C8.3088 2.825 9.49579 2.33333 10.7335 2.33333C11.9711 2.33333 13.1581 2.825 14.0333 3.70017C14.9085 4.57534 15.4001 5.76232 15.4001 7C15.4001 8.23768 14.9085 9.42466 14.0333 10.2998C13.1581 11.175 11.9711 11.6667 10.7335 11.6667ZM10.7335 0C6.0668 0 2.08146 2.90267 0.466797 7C2.08146 11.0973 6.0668 14 10.7335 14C15.4001 14 19.3855 11.0973 21.0001 7C19.3855 2.90267 15.4001 0 10.7335 0Z" fill="#C9C9C9"/>
+                            <path class="line-show" d="M1 1L20 13" stroke="#C9C9C9" stroke-width="2" stroke-linecap="round"/>
+                        
+                        </svg>
+
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column align-items-center modal-body-box modal-text">
+                    <p class="text-center">Вы входите в аккаунт test@gmail.com</p>
+                    <a class="text-center" href="#">Получить код для входа</a>
+                </div>
+            </div>
+   
+            <div class="d-flex flex-column modal-box modal-footer">
+                <button type="button" class="btn btn-primary modal-btn two">Войти</button>
+                <a href="#" class="modal-btn-link">Забыли пароль?</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="fade modal" id="registrationModalIp" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <form action="#" class="d-flex flex-column modal-content">
+            <div class="d-flex flex-column modal-box modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                <div class="fw-bold modal-title" id="modalVerticallyCenteredLabel">Вы приглашены в организацию ИП ТЕСТ</div>
+            </div>
+            <div class="d-flex flex-column modal-box modal-footer">
+                <button type="button" class="btn btn-primary modal-btn two">Принять приглашение</button>
+                <button type="button" class="btn btn-primary modal-btn two gray">Отклонить</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
