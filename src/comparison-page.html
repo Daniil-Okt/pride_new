@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru" class="">
+  @@include('html/head.html', {
+    'title': 'Cравнение товаров'
+  })
+  <body>
+    <div class="wrapper">
+      @@include('html/header.html')
+
+      <main class="page">
+        <div data-observ></div>
+        <div class="crumbs">
+            <div class="container d-flex align-items-center flex-wrap">
+                <a href="#">
+                    Главная
+                </a>
+                <span>/</span>
+                <a href="#">
+                    Сравнение товаров
+                </a>
+                <span>/</span>
+            </div>
+        </div>
+        @@include('html/comparison-page/compar.html')
+        
+
+
+      </main>
+
+      @@include('html/footer.html')
+    </div>
+
+    @@include('html/popup-example.html')
+  </body>
+</html>

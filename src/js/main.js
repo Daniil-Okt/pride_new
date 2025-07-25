@@ -322,3 +322,22 @@ document.addEventListener('DOMContentLoaded', function() {
 // 		})
 // 	});
 //   });
+
+
+// Функция для обновления ширины
+function updateTitleDescMinWidth() {
+	const descript = document.querySelector('.compar__item-row.title-row');
+	const decriptItemLast = descript.nextElementSibling;
+	const itemsDesc = decriptItemLast.querySelectorAll('.compar__item')
+	const descItemWidth = itemsDesc[0].offsetWidth;
+	const minWidth = descItemWidth * itemsDesc.length
+	if (decriptItemLast) {
+		
+		document.documentElement.style.setProperty(
+			'--descript-width', 
+			`${minWidth}px`
+		);
+	}
+  }
+  window.addEventListener('load', updateTitleDescMinWidth);
+  window.addEventListener('resize', updateTitleDescMinWidth);
