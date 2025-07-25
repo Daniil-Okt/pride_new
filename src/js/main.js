@@ -274,14 +274,11 @@ document.querySelectorAll('.icon-menu-catalog').forEach(btn => {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Находим все контейнеры с классом icon-ch
     const containers = document.querySelectorAll('.icon-ch');
     
     containers.forEach(container => {
-        // Находим input внутри контейнера
         const input = container.querySelector('input');
         
-        // Обработчик события ввода
         function handleInput() {
             if (input.value.trim() !== '') {
                 container.classList.add('icon-active');
@@ -290,10 +287,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
         
-        // Инициализация при загрузке
         handleInput();
         
-        // Слушаем события ввода
         input.addEventListener('input', handleInput);
     });
 });
